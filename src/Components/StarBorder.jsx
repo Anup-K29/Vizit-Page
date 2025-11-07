@@ -17,7 +17,7 @@ const StarBorder = ({
       <span
         className="absolute top-0 left-0 w-full h-[1px] pointer-events-none"
         style={{
-          background: `radial-gradient(circle, ${color}, transparent 70%)`,
+          background: `radial-gradient(circle, ${color}, transparent 30%)`,
           animation: `glow-top ${speed} linear infinite`,
         }}
       />
@@ -26,7 +26,7 @@ const StarBorder = ({
       <span
         className="absolute bottom-0 right-0 w-full h-[1px] pointer-events-none"
         style={{
-          background: `radial-gradient(circle, ${color}, transparent 70%)`,
+          background: `radial-gradient(circle, ${color}, transparent 30%)`,
           animation: `glow-bottom ${speed} linear infinite`,
         }}
       />
@@ -39,14 +39,14 @@ const StarBorder = ({
         {`
           /* TOP: left → right */
           @keyframes glow-top {
-            0%   { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
+            0%   { transform: translateX(-80%); }
+            100% { transform: translateX(80%); }
           }
 
           /* BOTTOM: right → left */
           @keyframes glow-bottom {
-            0%   { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
+            0%   { transform: translateX(80%); }
+            100% { transform: translateX(-80%); }
           }
         `}
       </style>

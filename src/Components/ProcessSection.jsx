@@ -37,7 +37,7 @@ export const ProcessSection = () => {
   ];
   return (
     <>
-      <section className="bg-linear-to-b from-[#C493FF] to-[#6730CF] py-20 text-white">
+      <section id="next-section" className="bg-linear-to-b from-[#C493FF] to-[#6730CF] py-20 text-white">
         <div className="max-w-7xl mx-auto px-6 text-center">
          
           <h2 className="text-3xl font-bold md:text-5xl font mb-5">

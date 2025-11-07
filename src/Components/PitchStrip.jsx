@@ -19,20 +19,22 @@ export const PitchStrip = () => {
           Manage Every Visitor
         </h2>
 
-        {/* <button
-          className="mt-22 px-10 py-4 rounded-full text-white font-semibold text-lg bg-linear-to-r from-[#C493FF] to-[#6730CF] shadow-[0_10px_25px_rgba(0,0,0,0.25)] hover:shadow-[0_12px_30px_rgba(0,0,0,0.35)] transition-all duration-300"
-        >
-          Free Demo
-        </button> */}
-
-           <StarBorder
+        <StarBorder
           className="mt-22 px-10 py-4 rounded-full text-white font-semibold text-lg bg-linear-to-r from-[#C493FF] to-[#6730CF] shadow-[0_10px_25px_rgba(0,0,0,0.25)] hover:shadow-[0_12px_30px_rgba(0,0,0,0.35)] transition-all duration-300"
         >
           Free Demo
         </StarBorder>
 
         <div className="mt-16 flex justify-center scale-125">
+          <button onClick={()=>{
+            const nextSection=document.getElementById("next-section");
+
+            nextSection?.scrollIntoView({behavior:"smooth"})
+          }} 
+          className="mt-3 cursor-pointer">
+            
           <ChevronsDown className="w-10 h-10 text-white/30 mt-3 animate-bounce opacity-90" />
+          </button>
         </div>
       </div>
     </section>
