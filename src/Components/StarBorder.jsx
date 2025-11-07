@@ -1,12 +1,10 @@
 
-
-
 const StarBorder = ({
   as: Component = "button",
   className = "",
   color = "white",
   speed = "3s",
-  borderSize = 2,
+  // borderSize = 2,
   children,
   ...rest
 }) => {
@@ -17,7 +15,7 @@ const StarBorder = ({
     >
       {/* ✅ TOP glow - moves left → right */}
       <span
-        className="absolute top-0 left-0 w-full h-[2px] pointer-events-none"
+        className="absolute top-0 left-0 w-full h-[1px] pointer-events-none"
         style={{
           background: `radial-gradient(circle, ${color}, transparent 70%)`,
           animation: `glow-top ${speed} linear infinite`,
@@ -26,7 +24,7 @@ const StarBorder = ({
 
       {/* ✅ BOTTOM glow - moves right → left */}
       <span
-        className="absolute bottom-0 right-0 w-full h-[2px] pointer-events-none"
+        className="absolute bottom-0 right-0 w-full h-[1px] pointer-events-none"
         style={{
           background: `radial-gradient(circle, ${color}, transparent 70%)`,
           animation: `glow-bottom ${speed} linear infinite`,
@@ -57,3 +55,7 @@ const StarBorder = ({
 };
 
 export default StarBorder;``
+
+
+
+
