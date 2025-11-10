@@ -2,6 +2,7 @@ import React from "react";
 import { ChevronsDown } from "lucide-react";
 import StarBorder from "./StarBorder.jsx";
 import TextType from "./TextType.jsx";
+import SplitText from "./SplitText.jsx";
 
 export const PitchStrip = () => {
   return (
@@ -13,13 +14,10 @@ export const PitchStrip = () => {
     >
       {/* ✅ Typing Text Animation */}
       <div className="max-w-5xl mx-auto text-center mb-22">
-        <TextType
+        <SplitText
           as="h2"
           text={`The Professional, Secure,\nAnd Effortless Way To\nManage Every Visitor`}
-          typingSpeed={50}
-          initialDelay={300}
-          loop={false}
-          showCursor={true}
+ 
           className="block w-full text-center text-4xl md:text-6xl font-semibold text-white leading-tight md:leading-[1.2] whitespace-pre-wrap"
         />
       </div>

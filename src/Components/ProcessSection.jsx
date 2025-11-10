@@ -17,118 +17,6 @@ export const ProcessSection = () => {
   const subRef = useRef(null);
   const cardsRef = useRef([]);
 
-  // useEffect(() => {
-  //   // --- TEXT ANIMATION ---
-  //   const tl = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: headingRef.current,
-  //       start: "top 80%",
-  //       toggleActions: "play none none reverse",
-  //     },
-  //   });
-
-  //   // Step 1: Heading
-  //   tl.fromTo(
-  //     headingRef.current,
-  //     { opacity: 0, y: 60, scale: 0.98 },
-  //     {
-  //       opacity: 1,
-  //       y: 0,
-  //       scale: 1,
-  //       duration: 1.2,
-  //       ease: "power3.out",
-  //     }
-  //   );
-
-  //   // Step 2: Subtitle
-  //   tl.fromTo(
-  //     subRef.current,
-  //     { opacity: 0, y: 40 },
-  //     {
-  //       opacity: 1,
-  //       y: 0,
-  //       duration: 1,
-  //       ease: "power3.out",
-  //     },
-  //     "+=0.3"
-  //   );
-
-  //   // --- CARD ANIMATION ---
-  //   gsap.fromTo(
-  //     cardsRef.current,
-  //     { opacity: 0, x: +100 },
-  //     {
-  //       opacity: 1,
-  //       x: 0,
-  //       duration: 1,
-  //       ease: "power3.out",
-  //       stagger: 1, // delay between cards
-  //       scrollTrigger: {
-  //         trigger: cardsRef.current[0],
-  //         start: "top 85%",
-  //         toggleActions: "play none none reverse",
-  //       },
-  //     }
-  //   );
-  // }, []);
-
-
-
-//   useEffect(() => {
-//   // --- TEXT ANIMATION ---
-//   const tl = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: headingRef.current,
-//       start: "top 80%",
-//       toggleActions: "play none none reverse",
-//     },
-//   });
-
-//   // Heading
-//   tl.fromTo(
-//     headingRef.current,
-//     { opacity: 0, y: 60, scale: 0.98 },
-//     { opacity: 1, y: 0, scale: 1, duration: 1.2, ease: "power3.out" }
-//   );
-
-//   // Subtitle
-//   tl.fromTo(
-//     subRef.current,
-//     { opacity: 0, y: 40 },
-//     { opacity: 1, y: 0, duration: 1, ease: "power3.out" },
-//     "+=0.3"
-//   );
-
-//   // --- CARD ANIMATION WITH POP ---
-//   gsap.fromTo(
-//     cardsRef.current,
-//     { opacity: 0, x: 100, scale: 0.9 },
-//     {
-//       opacity: 1,
-//       x: 0,
-//       scale: 1.05,
-//       duration: 0.8,
-//       ease: "power3.out",
-//       stagger: 0.25,
-//       scrollTrigger: {
-//         trigger: cardsRef.current[0],
-//         start: "top 85%",
-//         toggleActions: "play none none reverse",
-//       },
-//       onComplete: () => {
-//         // smooth settle back to 1.0 scale after appearing
-//         gsap.to(cardsRef.current, {
-//           scale: 1,
-//           duration: 0.4,
-//           ease: "power1.out",
-//           stagger: 0.15,
-//         });
-//       },
-//     }
-//   );
-// }, []);
-
-
 
 useEffect(() => {
   gsap.registerPlugin(ScrollTrigger);
@@ -150,7 +38,7 @@ useEffect(() => {
       y: 0,
       scale: 1,
       duration: 1.2,
-      ease: "power3.out",
+      ease: "power2.out",
     }
   );
 
@@ -161,10 +49,10 @@ useEffect(() => {
     {
       opacity: 1,
       y: 0,
-      duration: 0.6,
-      ease: "power3.out",
+      duration: 0.4,
+      ease: "power2.out",
     },
-    "+=0.1" // short pause between them
+    "-=0.6" // short pause between them
   );
 
   // 3️⃣ Cards animation — runs after subheading
@@ -176,7 +64,7 @@ useEffect(() => {
       x: 0,
       scale: 1.05,
       duration: 0.8,
-      ease: "power3.out",
+      ease: "power2.out",
       stagger: 0.25, // each card one by one
       onComplete: () => {
         // smooth settle back to 1.0 scale after appearing
@@ -188,7 +76,7 @@ useEffect(() => {
         });
       },
     },
-    "+=0.5" // delay after text finishes before cards start
+    "-=0.1" // delay after text finishes before cards start
   );
 }, []);
 
