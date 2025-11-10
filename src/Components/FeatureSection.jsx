@@ -21,7 +21,7 @@ export const FeatureSection = () => {
   <section className="bg-linear-to-b from-[#6730CF] to-[#C493FF] py-20">
       <div className="max-w-6xl mx-auto px-6 text-center">
         {/* Headings */}
-        <p className="text-white text-sm opacity-90 mb-2">
+        <p className="text-white text-3xl opacity-90 mb-2">
           An Automation Solution To Manage All Your Visitors
         </p>
         <h2 className="text-2xl md:text-3xl font-semibold text-white mb-30">
