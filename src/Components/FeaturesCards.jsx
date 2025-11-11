@@ -9,3 +9,5 @@ export const FeaturesCards = ({title,icon}) => {
     </div>
   )
 }
+
+
