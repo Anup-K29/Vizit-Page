@@ -7,12 +7,12 @@ import { useGSAP } from '@gsap/react';
 gsap.registerPlugin(ScrollTrigger, GSAPSplitText, useGSAP);
 
 const SplitText = ({
-  text,
+  text=`Features That Transform Visitor Management Into Real-Time Security Intelligence`,
   className = '',
-  delay = 600,
+  delay =10,
   duration = 0.6,
   ease = 'power3.out',
-  splitType = 'lines',
+  splitType = 'chars',
   from = { opacity: 0, y: 40 },
   to = { opacity: 1, y: 0 },
   threshold = 0.1,
@@ -135,7 +135,7 @@ const SplitText = ({
       wordWrap: 'break-word',
       willChange: 'transform, opacity'
     };
-    const classes = `split-parent  inline-block whitespace-normal ${className}`;
+    const classes = `split-parent overflow-hidden inline-block whitespace-normal ${className}`;
     switch (tag) {
       case 'h1':
         return (

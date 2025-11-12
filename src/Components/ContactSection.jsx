@@ -125,36 +125,36 @@ export const ContactSection = () => {
           className="bg-white rounded-2xl p-6 md:p-8 shadow-md flex flex-col justify-center items-center text-center space-y-6"
         >
           <h3 className="text-lg font-semibold text-black">Contact Us</h3>
-<div className="flex flex-col items-start gap-5">
+          <div className="flex flex-col items-start gap-5">
 
 
 
-          <div className="contact-item flex items-center gap-3 text-black">
-            <Phone className="text-[#5E17EB] shrink-0" size={20} />
-            <span className="text-base">+91 9560942419</span>
+            <div className="contact-item flex items-center gap-3 text-black">
+              <Phone className="text-[#5E17EB] shrink-0" size={20} />
+              <span className="text-base">+91 9560942419</span>
+            </div>
+
+            <div className="contact-item flex items-center gap-3 text-black">
+              <Mail className="text-[#5E17EB] shrink-0" size={20} />
+              <a
+                href="mailto:vizit@nxiaappworld.com"
+                className="underline text-base"
+              >
+                vizit@nxiaappworld.com
+              </a>
+            </div>
+
+            <div className="contact-item flex items-start gap-3 text-black justify-center">
+              <MapPin className="text-[#5E17EB] shrink-0 mt-1" size={20} />
+              <p className="text-base text-left">
+                Sector–10, Noida,
+                <br />
+                Uttar Pradesh–201301,
+                <br />
+                India
+              </p>
+            </div>
           </div>
-
-          <div className="contact-item flex items-center gap-3 text-black">
-            <Mail className="text-[#5E17EB] shrink-0" size={20} />
-            <a
-              href="mailto:vizit@nxiaappworld.com"
-              className="underline text-base"
-            >
-              vizit@nxiaappworld.com
-            </a>
-          </div>
-
-          <div className="contact-item flex items-start gap-3 text-black justify-center">
-            <MapPin className="text-[#5E17EB] shrink-0 mt-1" size={20} />
-            <p className="text-base text-left">
-              Sector–10, Noida,
-              <br />
-              Uttar Pradesh–201301,
-              <br />
-              India
-            </p>
-          </div>
-</div>
         </div>
 
       </div>
