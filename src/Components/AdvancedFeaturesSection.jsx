@@ -113,7 +113,7 @@ export const AdvancedFeaturesSection = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-[#6730CF] to-[#C493FF] py-24 px-6 overflow-hidden">
+    <section className="bg-linear-to-b from-[#6730CF] to-[#C493FF] py-24 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto text-center text-white mb-18">
         <BlurText className="text-3xl md:text-5xl font-semibold leading-snug flex justify-center mb-4" />
         <SplitText className="opacity-90 text-2xl mt-2" 

@@ -1,7 +1,10 @@
 import React from 'react'
+import UseCaseSection from "../Components/UseCaseSection.jsx"
 
 export const UseCases = () => {
   return (
-    <div>this is the usecases page</div>
+    <>
+    <UseCaseSection/>
+    </>
   )
 }
