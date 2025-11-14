@@ -17,6 +17,7 @@ export const PitchStrip = () => {
         <SplitText
           as="h2"
           text={`The Professional, Secure,\nAnd Effortless Way To\nManage Every Visitor`}
+           splitType = 'chars'
 
           className="block w-full text-center text-4xl md:text-6xl font-semibold text-white leading-tight md:leading-[1.4] whitespace-pre-wrap"
         />

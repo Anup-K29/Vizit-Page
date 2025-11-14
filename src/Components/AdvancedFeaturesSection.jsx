@@ -31,8 +31,7 @@ export const AdvancedFeaturesSection = () => {
           opacity: 1,
           scale: 1.05,
           boxShadow: "20px 10px 20px rgba(255, 255, 255, 0.25)",
-          // boxShadow: "0px 0px 55px rgba(196, 147, 255, 0.45)",
-
+        
           duration: 0.8,
           ease: "expo.out",
           delay: index * 0.1,
@@ -115,8 +114,10 @@ export const AdvancedFeaturesSection = () => {
   return (
     <section className="bg-linear-to-b from-[#6730CF] to-[#C493FF] py-24 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto text-center text-white mb-18">
-        <BlurText className="text-3xl md:text-5xl font-semibold leading-snug flex justify-center mb-4" />
-        <SplitText className="opacity-90 text-2xl mt-2" 
+        <BlurText 
+        text="Unlock the Power of Data"
+        className="text-3xl md:text-5xl font-semibold leading-snug flex justify-center mb-4" />
+        <SplitText text="Features That Transform Visitor Management Into Real-Time Security Intelligence" className="opacity-90 text-2xl mt-2"  splitType = 'chars'
         />
       </div>
 

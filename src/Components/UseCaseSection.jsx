@@ -5,7 +5,9 @@ import UseCaseCard from "./UseCaseCards.jsx";
 import HealthcareFacility from "../assets/images/UseCaseFolder/HealthcareFacility.jpg";
 import DataCenterSecurity from "../assets/images/UseCaseFolder/DataCenterSecurity.jpg";
 import LuxuryResidential from "../assets/images/UseCaseFolder/LuxuryResidential.jpg";
-;
+import SplitText from "./SplitText.jsx";
+import BlurText from "./BlurText.jsx";
+
 
 const UseCaseSection = () => {
   const useCases = [
@@ -77,10 +79,17 @@ const UseCaseSection = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col gap-12"
+    <div className="max-w-full mx-auto px-6 py-12 flex flex-col gap-12"
       style={{
-      background: "linear-gradient(135deg, #6730CF 0%, #7037DB 50%, #C493FF 100%)"
-    }}>
+        background: "linear-gradient(135deg, #6730CF 0%, #7037DB 50%, #C493FF 100%)"
+      }}>
+
+      {/* 🔥 SECTION HEADING */}
+      <SplitText text="    Vizit enhances security, ensures compliance, and optimizes 
+        the front desk experience across various industries."
+         splitType = 'lines'
+        className="text-center text-white text-2xl md:text-3xl font-semibold max-w-4xl mx-auto leading-snug" />
+
       {useCases.map((item, index) => (
         <UseCaseCard key={index} {...item} />
       ))}

@@ -12,7 +12,7 @@ const buildKeyframes = (from, steps) => {
 };
 
 const BlurText = ({
-  text = 'Unlock the Power of Data',
+  text = '',
   delay = 100,
   className = '',
   animateBy = 'words',
