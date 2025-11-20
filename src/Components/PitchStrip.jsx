@@ -1,7 +1,6 @@
 import React from "react";
 import { ChevronsDown } from "lucide-react";
 import StarBorder from "./StarBorder.jsx";
-import TextType from "./TextType.jsx";
 import SplitText from "./SplitText.jsx";
 
 export const PitchStrip = () => {

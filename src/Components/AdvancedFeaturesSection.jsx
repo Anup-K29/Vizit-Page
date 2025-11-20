@@ -122,7 +122,7 @@ export const AdvancedFeaturesSection = () => {
       </div>
 
       {/* Features Grid */}
-      <div className="grid gap-y-14 gap-x-10 sm:grid-cols-2 lg:grid-cols-3 place-items-start max-w-6xl mx-auto">
+      <div className="grid gap-y-14 gap-x-10 sm:grid-cols-2 lg:grid-cols-3 place-items-center-safe max-w-6xl mx-auto ">
         {advancedFeatureItems.map((feature, index) => (
           <div
             key={index}

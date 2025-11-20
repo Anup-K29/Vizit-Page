@@ -3,7 +3,7 @@ import React from "react";
 
 export const AdvancedFeaturesCards = ({ icon, title, description }) => {
   return (
-    <div className="max-w-[280px] text-white">
+    <div className="max-w-[280px] text-white ">
       
       {/* Icon + Title */}
       <div className="flex items-start gap-3 mb-3">

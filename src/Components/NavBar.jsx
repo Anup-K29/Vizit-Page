@@ -6,7 +6,7 @@ const navItems = [
   { label: "Home", path: "/" },
   { label: "Features", path: "/features" },
   { label: "Use Cases", path: "/use-cases" },
-  { label: "Pricing", path: "/pricing" },
+  // { label: "Pricing", path: "/pricing" },
 ];
 
 export const NavBar = () => {
@@ -19,7 +19,7 @@ export const NavBar = () => {
      }`;
 
   return (
-    <header className="w-full bg-[#f9f9fb] border-b border-[#d1c4e9]">
+    <header className="w-full bg-[#f9f9fb] border-b border-[#d1c4e9] fixed top-0 left-0 z-50">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
@@ -41,7 +41,7 @@ export const NavBar = () => {
 
         {/* Right Button */}
         <NavLink
-          to="/login"
+          to="/form"
           className="px-5 py-2 rounded-full border border-[#6730CF] text-[#6730CF] text-[15px] font-medium hover:bg-[#6730CF] hover:text-white transition-all duration-300"
         >
           Login

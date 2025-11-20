@@ -1,5 +1,5 @@
 // UseCaseCard.jsx
-import React from "react";
+import React from "react"; 
 import { motion } from "framer-motion";
 
 const UseCaseCard = ({ image, title, features }) => {

@@ -26,7 +26,7 @@ const UseCaseSection = () => {
           desc2: "Maintains regulatory compliance by securing sensitive patient data and restricting casual visitors to non-public areas.   "
         },
         {
-          heading: "Rapid Tracking & Security",
+          heading: "Rapid Tracking Security",
           desc1: "Live Visitor Insights & Digital ID: Provides security with a real-time list of all non-staff visitors. The Digital ID allows staff to quickly identify vendors vs. family members.",
           desc2: "Enables immediate lockdown/alert procedures and helps security know instantly who is in the building during a crisis or unauthorized area breach."
         }
@@ -77,17 +77,17 @@ const UseCaseSection = () => {
       ],
     }
   ];
-
+// 
   return (
-    <div className="max-w-full mx-auto px-6 py-12 flex flex-col gap-12"
+    <div className="max-w-fit mx-auto px-17 py-24 flex flex-col gap-12"
       style={{
         background: "linear-gradient(135deg, #6730CF 0%, #7037DB 50%, #C493FF 100%)"
       }}>
 
       {/* 🔥 SECTION HEADING */}
-      <SplitText text="    Vizit enhances security, ensures compliance, and optimizes 
+      <SplitText text="Vizit enhances security, ensures compliance, and optimizes 
         the front desk experience across various industries."
-         splitType = 'lines'
+        splitType='lines'
         className="text-center text-white text-2xl md:text-3xl font-semibold max-w-4xl mx-auto leading-snug" />
 
       {useCases.map((item, index) => (
