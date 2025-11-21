@@ -1,5 +1,5 @@
 import React from 'react';
-import { useForm, Watch } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 
 import { formSchema } from './formValidation';
@@ -8,12 +8,13 @@ import { useCountryCode } from './countryCode';
 function RegistrationForm() {
 
   const countryList = useCountryCode();
-  console.log(countryList);
+  // console.log(countryList);
 
 
   const {
     register,
-    handleSubmit, watch,
+    handleSubmit,
+    watch,
     formState: { errors, isSubmitting }
   } = useForm({
     resolver: zodResolver(formSchema),
@@ -61,7 +62,9 @@ function RegistrationForm() {
   ];
 
   return (<>
-    <form onSubmit={handleSubmit(onSubmit)} className="max-w-2xl mx-auto p-6 space-y-6 mt-15">
+
+    <form onSubmit={handleSubmit(onSubmit)} 
+    className="max-w-2xl mx-auto p-6 space-y-6 mt-15">
       {/* 2-column grid: name / company | country / phone | email / password */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* row-1 */}
@@ -71,6 +74,7 @@ function RegistrationForm() {
             type="text"
             placeholder="Enter your name"
             {...register('name')}
+            required
             className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
           />
           {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name.message}</p>}
@@ -81,7 +85,7 @@ function RegistrationForm() {
           <input
             type="text"
             placeholder="Enter company name"
-            {...register('companyName')}
+            {...register('companyName', { required: true })} required
             className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
           />
           {errors.companyName && <p className="text-red-500 text-xs mt-1">{errors.companyName.message}</p>}
@@ -92,6 +96,7 @@ function RegistrationForm() {
           <label className="block text-sm font-medium text-gray-700">Country *</label>
           <select
             {...register('countryCode')}
+
             value={watch('countryCode')}
             className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
           >
@@ -109,7 +114,7 @@ function RegistrationForm() {
           <input
             type="tel"
             placeholder="Enter your phone number  "
-            {...register('phoneNumber')}
+            {...register('phoneNumber', { required: true })} required
             className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
           />
           {errors.phoneNumber && <p className="text-red-500 text-xs mt-1">{errors.phoneNumber.message}</p>}
@@ -121,7 +126,7 @@ function RegistrationForm() {
           <input
             type="email"
             placeholder="Enter your email"
-            {...register('email')}
+            {...register('email', { required: true })} required
             className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
           />
           {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email.message}</p>}
@@ -132,19 +137,18 @@ function RegistrationForm() {
           <input
             type="password"
             placeholder="Enter your password"
-            {...register('password')}
+            {...register('password', { required: true })} required
             className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
           />
           {errors.password && <p className="text-red-500 text-xs mt-1">{errors.password.message}</p>}
         </div>
       </div>
 
-
       {/* Two-column row: Category | Hear-about-us */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label className="block text-sm font-medium text-gray-700">Category *</label>
-          <select {...register('category')} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border">
+          <select {...register('category', { required: true })} required className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border">
             <option value="">Select a category</option>
             {categories.map((cat) => (
               <option key={cat} value={cat}>{cat}</option>
@@ -155,7 +159,7 @@ function RegistrationForm() {
 
         <div>
           <label className="block text-sm font-medium text-gray-700">How did you hear about us? *</label>
-          <select {...register('hearAboutUs')} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border">
+          <select {...register('hearAboutUs', { required: true })} required className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border">
             <option value="">Select an option</option>
             {hearAboutUsOptions.map((o) => (
               <option key={o} value={o}>{o}</option>
@@ -164,8 +168,6 @@ function RegistrationForm() {
           {errors.hearAboutUs && <p className="text-red-500 text-xs mt-1">{errors.hearAboutUs.message}</p>}
         </div>
       </div>
-
-
 
       {/* Sign-up button */}
       <button
@@ -176,6 +178,7 @@ function RegistrationForm() {
         {isSubmitting ? 'Submitting...' : 'Sign up'}
       </button>
     </form>
+
   </>
 
   );

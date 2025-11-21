@@ -2,6 +2,7 @@ import React from "react";
 import { ChevronsDown } from "lucide-react";
 import StarBorder from "./StarBorder.jsx";
 import SplitText from "./SplitText.jsx";
+import { NavLink } from "react-router-dom";
 
 export const PitchStrip = () => {
   return (
@@ -32,7 +33,10 @@ export const PitchStrip = () => {
           transition-all duration-300 
           animate-float-glow"
         >
+          <NavLink to ="/registration-form">
+
           Free Demo
+          </NavLink>
         </StarBorder>
       </div>
 

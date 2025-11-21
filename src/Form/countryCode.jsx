@@ -6,14 +6,6 @@ export const useCountryCode = () => {
 
 
   useEffect(() => {
-    // fetch("https://api.first.org/data/v1/countries")
-    //   .then((res) => res.json())
-    //   .then((data) => {
-    //     setCountryCode(Object.values(data.data))
-    //   })
-    //   .catch(() => {setCountryCode([])})
-
-
     fetchCountryCodes().then((data) => {
       setCountryCode(data)
     }).catch(() => { setCountryCode([]) })

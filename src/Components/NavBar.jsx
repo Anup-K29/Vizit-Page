@@ -12,11 +12,10 @@ const navItems = [
 export const NavBar = () => {
   const linkClass = ({ isActive }) =>
     `relative text-[15px] font-medium transition-all duration-300 pb-1 
-     ${
-       isActive
-         ? "text-[#6730CF] font-semibold after:content-[''] after:absolute after:left-0 after:-bottom-[4px] after:w-full after:h-[3px] after:bg-gradient-to-r after:from-[#6730CF] after:to-[#A34EFF] after:rounded-full"
-         : "text-[#6730CF] opacity-80 hover:opacity-100 after:content-[''] after:absolute after:left-0 after:-bottom-[4px] after:w-0 after:h-[3px] after:bg-gradient-to-r after:from-[#6730CF] after:to-[#A34EFF] after:rounded-full after:transition-all after:duration-300 hover:after:w-full"
-     }`;
+     ${isActive
+      ? "text-[#6730CF] font-semibold after:content-[''] after:absolute after:left-0 after:-bottom-[4px] after:w-full after:h-[3px] after:bg-gradient-to-r after:from-[#6730CF] after:to-[#A34EFF] after:rounded-full"
+      : "text-[#6730CF] opacity-80 hover:opacity-100 after:content-[''] after:absolute after:left-0 after:-bottom-[4px] after:w-0 after:h-[3px] after:bg-gradient-to-r after:from-[#6730CF] after:to-[#A34EFF] after:rounded-full after:transition-all after:duration-300 hover:after:w-full"
+    }`;
 
   return (
     <header className="w-full bg-[#f9f9fb] border-b border-[#d1c4e9] fixed top-0 left-0 z-50">
@@ -40,12 +39,25 @@ export const NavBar = () => {
         </ul>
 
         {/* Right Button */}
-        <NavLink
-          to="/form"
-          className="px-5 py-2 rounded-full border border-[#6730CF] text-[#6730CF] text-[15px] font-medium hover:bg-[#6730CF] hover:text-white transition-all duration-300"
-        >
-          Login
-        </NavLink>
+        <div className="flex items-center gap-4">
+
+          <a
+            href="/login-form"
+            target="_blank"
+            className="px-5 py-2 rounded-full border border-[#6730CF] text-[#6730CF] text-[15px] font-medium hover:bg-[#6730CF] hover:text-white transition-all duration-300"
+          >
+            Login
+          </a>
+
+
+          <NavLink
+            to="/registration-form"
+            className="px-5 py-2 rounded-full border border-[#6730CF] text-white bg-[#6730CF] text-[15px] font-medium hover:bg-white hover:text-[#6730CF] transition-all duration-300"
+          >
+            Get Started
+          </NavLink>
+        </div>
+
       </nav>
     </header>
   );

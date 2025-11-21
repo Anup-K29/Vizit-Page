@@ -5,7 +5,8 @@ import {Home} from "../Pages/Home.jsx"
 import {Features} from "../Pages/Features.jsx"
 import {UseCases} from "../Pages/Use-Cases.jsx"
 import {Pricing} from "../Pages/Pricing.jsx"
-import RegistrationForm from "../Form/Form.jsx";
+import RegistrationForm from "../Form/RegistrationForm.jsx";
+import { LoginForm } from "@/Form/LoginForm";
 
 export const Routers = () => {
   return (
@@ -17,8 +18,9 @@ export const Routers = () => {
             <Route path="features" element ={<Features/>} />
             <Route path="use-cases" element ={<UseCases/>}/>
             {/* <Route path="pricing" element={<Pricing/>}/> */}
-            <Route path="form" element={<RegistrationForm/>}/>
+            <Route path="registration-form" element={<RegistrationForm/>}/>
           </Route>
+            <Route path="login-form" element={<LoginForm/>}/>
         </Routes>
       </Router>
     </>
