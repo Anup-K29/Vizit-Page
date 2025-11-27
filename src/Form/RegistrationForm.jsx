@@ -348,6 +348,7 @@ function RegistrationForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
+      
       className="max-w-2xl mx-auto p-6 space-y-6 mt-15"
     >
      
