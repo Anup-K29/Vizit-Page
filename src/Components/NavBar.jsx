@@ -42,7 +42,7 @@ export const NavBar = () => {
         <div className="flex items-center gap-4">
 
           <a
-            href="/login-form"
+            href="https://vizit.nxiappworld.com/"
             target="_blank"
             className="px-5 py-2 rounded-full border border-[#6730CF] text-[#6730CF] text-[15px] font-medium hover:bg-[#6730CF] hover:text-white transition-all duration-300"
           >
