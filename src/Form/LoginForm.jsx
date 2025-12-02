@@ -4,14 +4,44 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { formSchema } from "./formValidation"
 import Logo from "../assets/images/vizit-logo.png";
 
+const API_BASE_URL = "https://vms-backend-w6pj.onrender.com";
+
+
 export const LoginForm = () => {
     const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm({
         resolver: zodResolver(formSchema)
     })
 
-    const onSubmit = (data) => {
-        // Add your Loginform submission logic here
-        alert('Form submitted successfully!');
+    const onSubmit = async (data) => {
+
+        try {
+            const response = await fetch(`${API_BASE_URL}/api/auth/login`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            })
+
+            const result = await response.json()
+
+            if (!response.ok) {
+                alert(result.message || "Login Failed")
+                return
+            }
+
+            // Token store in browser storage
+
+            localStorage.setItem("token", result.token)
+            // optional: store company info too if backend sends it
+            // localStorage.setItem("company", JSON.stringify(result.company));
+
+            window.location.href = "https://vizit.nxiappworld.com/admin-dashboard"
+
+        } catch (err) {
+            console.log("Login Eror", err)
+
+        }
     }
     return (
         <>
