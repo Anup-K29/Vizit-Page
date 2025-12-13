@@ -12,3 +12,68 @@
     font-family: 'Albert Sans', system-ui, sans-serif;
   }
 }
+
+.input-group {
+  position: relative;
+}
+
+.input-floating-label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: all 0.2s ease;
+  color: #9ca3af;
+}
+
+input:focus + .input-floating-label,
+input:not(:placeholder-shown) + .input-floating-label,
+select:focus + .input-floating-label,
+select:not([value=""]) + .input-floating-label {
+  top: 6px;
+  font-size: 11px;
+  color: #6366f1;
+}
+
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out;
+}
+
+
+
+
+
+/* Fade + Slide Up Animation */
+@keyframes slideFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-slideFadeUp {
+  animation: slideFadeUp 0.35s ease-out forwards;
+}
+
+/* Success Checkmark Animation */
+@keyframes pop {
+  0% { transform: scale(0.4); opacity: 0; }
+  60% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+.animate-pop {
+  animation: pop 0.4s ease-out forwards;
+}

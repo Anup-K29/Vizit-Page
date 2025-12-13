@@ -4,11 +4,13 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { Routers } from './Routers/Routers'
 import { NavBar } from './Components/NavBar.jsx'
+import {Toaster} from "react-hot-toast"
 
 function App() {
 
 
   return (<>
+        <Toaster position="top-right" reverseOrder={false} />
     <Routers/>
     {/* <NavBar/> */}
     </>

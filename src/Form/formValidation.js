@@ -1,8 +1,8 @@
 import { z } from 'zod';
 
 export const formSchema = z.object({
-  name: z.string().min(2, 'Name must be at least 2 characters'),
-  companyName: z.string().min(2, 'Company name must be at least 2 characters'),
+  name: z.string(),
+  companyName: z.string(),
   countryCode: z.string().min(1, 'Please select country code'),
   phoneNumber: z.string().regex(/^[0-9]{10}$/, 'Phone number must be 10 digits'),
   email: z.string().email('Invalid email address'),
