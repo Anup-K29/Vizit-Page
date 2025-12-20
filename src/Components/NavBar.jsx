@@ -4,7 +4,13 @@ import Logo from "../assets/images/vizit-logo.png";
 
 const navItems = [
   { label: "Home", path: "/" },
-  { label: "Features", path: "/features" },
+  { label: "Features", path: "/features",
+    dropdown: [
+      { label: "Sign-in & Control", path: "/features/sign-in-control" },
+      { label: "Custom Visitor Entry", path: "/features/custom-entry" },
+      { label: "Managing Documents", path: "/features/documents" },
+    ],
+   },
   { label: "Use Cases", path: "/use-cases" },
   // { label: "Pricing", path: "/pricing" },
 ];
@@ -28,7 +34,7 @@ export const NavBar = () => {
         </div>
 
         {/* Center Links */}
-        <ul className="hidden md:flex items-center gap-10">
+        {/* <ul className="hidden md:flex items-center gap-10">
           {navItems.map(({ label, path }) => (
             <li key={path}>
               <NavLink to={path} className={linkClass} end={path === "/"}>
@@ -36,7 +42,56 @@ export const NavBar = () => {
               </NavLink>
             </li>
           ))}
-        </ul>
+        </ul> */}
+
+        <ul className="hidden md:flex items-center gap-10">
+  {navItems.map((item) => (
+    <li key={item.label} className="relative group">
+      
+      {/* Main Nav Link */}
+      <NavLink
+        to={item.path}
+        className={linkClass}
+        end={item.path === "/"}
+      >
+        {item.label}
+      </NavLink>
+
+      {/* Dropdown */}
+      {item.dropdown && (
+        <div
+          className="
+            absolute left-0 top-[120%]
+            w-56 bg-white rounded-xl shadow-lg
+            opacity-0 invisible group-hover:opacity-100 group-hover:visible
+            translate-y-2 group-hover:translate-y-0
+            transition-all duration-200
+            border border-[#e6dcff]
+            z-50
+          "
+        >
+          <ul className="py-2">
+            {item.dropdown.map((sub) => (
+              <li key={sub.path}>
+                <NavLink
+                  to={sub.path}
+                  className="
+                    block px-5 py-2 text-[14px] text-[#6730CF]
+                    hover:bg-[#f3edff]
+                    transition
+                  "
+                >
+                  {sub.label}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </li>
+  ))}
+</ul>
+
 
         {/* Right Button */}
         <div className="flex items-center gap-4">
