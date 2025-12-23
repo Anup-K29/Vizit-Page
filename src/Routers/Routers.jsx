@@ -23,8 +23,8 @@ export const Routers = () => {
             <Route path="features/sign-in-control" element={<SignINControl/>}/>
             <Route path="features/custom-entry" element={<CustomVisitorEntry/>}/>
             <Route path="features/printed-passes" element={<PrintedPass/>}/>
-            <Route path="features/sign-in-control" element={<VisitorManagement/>}/>
-            <Route path="visitor-management" element={<RegistrationForm/>}/>
+            <Route path="features/visitor-management" element={<VisitorManagement/>}/>
+            <Route path="visitor-registration" element={<RegistrationForm/>}/>
           </Route>
         
         </Routes>
