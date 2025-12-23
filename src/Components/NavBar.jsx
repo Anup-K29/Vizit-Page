@@ -13,11 +13,11 @@ const navItems = [
     dropdown: [
       { label: "Sign-in & Control", path: "/features/sign-in-control" },
       { label: "Custom Visitor Entry", path: "/features/custom-entry" },
-      { label: "Managing Documents", path: "/features/managing-documents" },
-      { label: "File Reporting", path: "/features/file-reporting" },
-      { label: "Prebooking Guest", path: "/features/prebooking-guest" },
+      // { label: "Managing Documents", path: "/features/managing-documents" },
+      // { label: "File Reporting", path: "/features/file-reporting" },
+      // { label: "Prebooking Guest", path: "/features/prebooking-guest" },
       { label: "Printed Passes", path: "/features/printed-passes" },
-      { label: "Site Inductions", path: "/features/site-inductions" },
+      // { label: "Site Inductions", path: "/features/site-inductions" },
       { label: "Visitor Management", path: "/features/visitor-management" },
 
     ],
