@@ -4,37 +4,20 @@ import Logo from "../assets/images/vizit-logo.png";
 
 const navItems = [
   {
-    label: "Home",
-    path: "/"
+    // label: "",
+    // path: "/"
   },
   {
     label: "Features",
-    // path: "/features",
-    dropdown: [
-      { label: "Sign-in & Control", path: "/features/sign-in-control" },
-      { label: "Custom Visitor Entry", path: "/features/custom-entry" },
-      // { label: "Managing Documents", path: "/features/managing-documents" },
-      // { label: "File Reporting", path: "/features/file-reporting" },
-      // { label: "Prebooking Guest", path: "/features/prebooking-guest" },
-      { label: "Printed Passes", path: "/features/printed-passes" },
-      // { label: "Site Inductions", path: "/features/site-inductions" },
-      { label: "Visitor Management", path: "/features/visitor-management" },
+    path: "/features",
 
-    ],
   },
   {
-    label: "Industries",
-    dropdown: [
-      { label: "Events", path: "/features/events" },
-      { label: "Manufacturing", path: "/features/manufacturing" },
-      { label: "People", path: "/features/people" },
-      { label: "Workplace", path: "/features/workplace" },
-      { label: "Schools", path: "/features/schools" },
+    label: "Solutions",
 
-    ],
-    //  path: "/use-cases"
+     path: "/solutions"
   },
-  // { label: "Pricing", path: "/pricing" },
+  { label: "Pricing", path: "/pricing" },
 ];
 
 export const NavBar = () => {
