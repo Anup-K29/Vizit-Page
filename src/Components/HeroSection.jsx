@@ -13,21 +13,21 @@ import "swiper/css/pagination";
 export const heroSlides = [
   {
     // badge: "UK’s #1 Visitor and Contractor Software",
-    title: "No More Paper Logbooks",
+    title: "No More Paper Log Books",
     description:
       "Move your front desk to the cloud. Track visitors, verify IDs, and stay compliant without the paperwork with a seamless and digital solution.",
     image: HeroCarousel1,
   },
   {
     // badge: "Smart Visitor Experience",
-    title: "Secure Your Workspace",
+    title: "Secure Your Wrok Environment",
     description:
       "Protect your facility with instant ID verification, custom health screening, and real-time alerts. Know exactly who is in your building at any given moment",
     image: HeroCarousel2,
   },
   {
     // badge: "Smart Visitor Experience",
-    title: "Data Made Simple",
+    title: "Insights That Drive Action",
     description:
       "Turn visitor traffic into clear reports. Track peak hours, monitor compliance, and export audit-ready logs in seconds.",
     image: HeroCarousel3,
@@ -132,8 +132,8 @@ export const HeroSection = () => {
                 <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold text-[#0f0f1a] leading-tight mb-6">
                   {slide.title}
                 </h1>
-
-                <p className="text-[#4b4b63] text-lg leading-relaxed max-w-xl mb-10">
+{/* max-w-xl */}
+                <p className="text-[#4b4b63] text-2xl leading-relaxed min-w-xl mb-10">
                   {slide.description}
                 </p>
 
@@ -154,7 +154,7 @@ export const HeroSection = () => {
         ))}
       </Swiper>
 
-      <div className="hero-pagination flex justify-center mt-10"></div>
+      <div className="hero-pagination flex justify-center mt-18"></div>
     </section>
   );
 };
