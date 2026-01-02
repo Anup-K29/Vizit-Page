@@ -69,7 +69,7 @@ export const ContactSection = () => {
   }, []);
 
   return (
-    <section className="bg-[#b980fe] py-12 px-6 md:px-16 overflow-hidden">
+    <section className="bg-[#ffffff] py-12 px-6 md:px-16 overflow-hidden">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* LEFT CARD — Form (2/3 width) */}
         <div
