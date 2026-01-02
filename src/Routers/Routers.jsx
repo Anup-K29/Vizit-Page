@@ -24,7 +24,7 @@ export const Routers = () => {
             <Route path="features/custom-entry" element={<CustomVisitorEntry/>}/>
             <Route path="features/printed-passes" element={<PrintedPass/>}/>
             <Route path="features/visitor-management" element={<VisitorManagement/>}/>
-            <Route path="visitor-registration" element={<RegistrationForm/>}/>
+            <Route path="registration-form" element={<RegistrationForm/>}/>
           </Route>
         
         </Routes>
