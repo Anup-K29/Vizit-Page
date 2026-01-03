@@ -7,11 +7,13 @@ import FeatureBlocksSection from "@/Components/FeatureBlocksSection.jsx";
 import WorkplaceFeatures from "@/Components/WorkplaceFeatures.jsx";
 import DashboardOverview from "@/Components/DashboardOverview.jsx";
 import TestimonialsSection from "@/Components/TestimonialsSection.jsx";
+import { FeaturesSection } from "@/Components/FeatureSection.jsx";
 
 export const Home = () => {
   return (
     <>
       <HeroSection />
+      <FeaturesSection/>
       <VisitorIntro/>
       <VisitorTypes/>
       <FeatureBlocksSection />

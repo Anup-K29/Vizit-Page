@@ -1,91 +1,178 @@
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { FeaturesCards } from "./FeaturesCards.jsx";
-import AdminDashboard from "../assets/images/AdminDashboard.png";
-import ApprovalSysytem from "../assets/images/ApprovalSysytem.png";
-import HostNotification from "../assets/images/HostNotification.png";
-import ImageCapture from "../assets/images/ImageCapture.png";
-import VisitorFeedBak from "../assets/images/VisitorFeedBak.png";
-import QR_Entry_Exit from "../assets/images/QREntry-Exit.png";
+import React, { useState, useEffect, useRef } from "react";
+import { NavLink } from "react-router-dom";
 
-gsap.registerPlugin(ScrollTrigger);
+import CheckInImg from "../assets/images/newHomePage/CheckInImg.png";
+import SecurityImg from "../assets/images/newHomePage/SecurityImg.png";
+import AnalyticsImg from "../assets/images/newHomePage/AnalyticsImg.png";
 
-export const FeatureSection = () => {
-  const headingRef = useRef(null);
-  const subRef = useRef(null);
-  const cardsRef = useRef([]);
+const features = [
+  {
+    title: "Seamless Check-In",
+    image: CheckInImg,
+    description:
+      "Welcome guests in seconds with touchless QR entries and instant host alerts.",
+  },
+  {
+    title: "Security & Compliance",
+    image: SecurityImg,
+    description:
+      "Secure your workspace with digital NDAs, ID verification, and automated audit trails.",
+  },
+  {
+    title: "Real-Time Analytics",
+    image: AnalyticsImg,
+    description:
+      "Track occupancy and visitor trends with a live dashboard for smarter facilities management.",
+  },
+  {
+    title: "Security & Compliance",
+    image: SecurityImg,
+    description:
+      "Secure your workspace with digital NDAs, ID verification, and automated audit trails.",
+  },
+  {
+    title: "Real-Time Analytics",
+    image: AnalyticsImg,
+    description:
+      "Track occupancy and visitor trends with a live dashboard for smarter facilities management.",
+  },
+];
 
+export const FeaturesSection = () => {
+  const [active, setActive] = useState(0);
+  const intervalRef = useRef(null);
+
+  // ---------- AUTOPLAY ----------
   useEffect(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: headingRef.current,
-        start: "top 85%",
-        toggleActions: "play none none reverse",
-      },
-    });
-
-    tl.fromTo(
-      headingRef.current,
-      { opacity: 0, y: 40 },
-      { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }
-    ).fromTo(
-      subRef.current,
-      { opacity: 0, y: 20 },
-      { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" },
-      "-=0.3"
-    );
-
-    gsap.fromTo(
-      cardsRef.current,
-      { opacity: 0, y: 60 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 0.8,
-        ease: "power2.out",
-        stagger: 0.2,
-        scrollTrigger: {
-          trigger: cardsRef.current[0],
-          start: "top 85%",
-        },
-      }
-    );
+    startAutoPlay();
+    return stopAutoPlay;
+    // eslint-disable-next-line
   }, []);
 
-  const features = [
-    { title: "QR Based Entry–Exit", icon: QR_Entry_Exit },
-    { title: "Approval System", icon: ApprovalSysytem },
-    { title: "Admin Dashboard", icon: AdminDashboard },
-    { title: "Live Image Capture", icon: ImageCapture },
-    { title: "Host Notification", icon: HostNotification },
-    { title: "Visitor Feedback", icon: VisitorFeedBak },
-  ];
+  const startAutoPlay = () => {
+    stopAutoPlay();
+    intervalRef.current = setInterval(() => {
+      setActive((prev) => (prev + 1) % features.length);
+    }, 2000);
+  };
 
-  return (
-    <section className="bg-linear-to-b from-[#cecece] to-[#ffffff] py-20 text-black overflow-hidden">
-      <div className="max-w-6xl mx-auto px-6 text-center">
-        {/* Headings */}
-        <p ref={headingRef} className="text-3xl opacity-90 mb-2">
-          An Automation Solution To Manage All Your Visitors
-        </p>
-        <h2 ref={subRef} className="text-2xl md:text-3xl font-semibold mb-30">
-          Improving Safety & Enhancing Productivity
+  const stopAutoPlay = () => {
+    if (intervalRef.current) clearInterval(intervalRef.current);
+  };
+
+  return ( //px-6 py-24
+    <section className="w-full bg-white py-12 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-40 text-center"> 
+        {/* HEADING */}
+        <h2 className="text-3xl md:text-4xl font-bold mb-16">
+          What Does Vizit Do?
         </h2>
 
-        {/* Feature Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mb-22 gap-16">
-          {features.map((feature, index) => (
-            <div key={index} ref={(el) => (cardsRef.current[index] = el)}>
-              <FeaturesCards {...feature} />
-            </div>
-          ))}
+        {/* COVERFLOW WHEEL */}
+        <div
+          className="relative h-[420px] flex items-center justify-center"
+          style={{ perspective: "1200px" }} //1200px
+          onMouseEnter={stopAutoPlay}
+          onMouseLeave={startAutoPlay}
+        >
+          {features.map((feature, index) => {
+            const total = features.length;
+
+            // --------- CIRCULAR OFFSET (KEY PART) ---------
+            let offset = index - active;
+            if (offset > total / 2) offset -= total;
+            if (offset < -total / 2) offset += total;
+
+            // hide far cards
+            if (Math.abs(offset) > 1) return null;
+
+            const translateX = offset * 260;
+            const scale =
+              offset === 0 ? 1 : Math.abs(offset) === 1 ? 0.85 : 0.7;
+
+            // const opacity =
+            //   offset === 0 ? 1 : Math.abs(offset) === 1 ? 0.6 : 0.3;
+            // const blur = offset === 0 ? "blur(0px)" : "blur(4px)";
+
+            let opacity = 1;
+            let blur = "blur(0px)";
+
+            if (Math.abs(offset) === 1) {
+              opacity = 0.7; // just behind → opacity only
+            }
+
+            if (Math.abs(offset) === 2) {
+              opacity = 0.35; // further behind
+              blur = "blur(2px)"; // blur only here
+            }
+
+            const zIndex = 30 - Math.abs(offset) * 10;
+
+            return (
+              <div
+                key={index}
+                className="absolute transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]"
+                style={{
+                  transform: `translateX(${translateX}px) scale(${scale}) rotateY(${offset * +30}deg)`, //12
+                  opacity,
+                  filter: blur,
+                  zIndex,
+                }}
+              >
+                <div className="bg-white rounded-3xl p-8 w-65 shadow-2xl">
+                  {/* IMAGE */}
+                  <div className="flex justify-center mb-6">
+                    <img
+                      src={feature.image}
+                      alt={feature.title}
+                      className="w-76"
+                    />
+                  </div>
+
+                  {/* TITLE */}
+                  <h3 className="text-lg font-semibold text-[#AA60C8] mb-3">
+                    {feature.title}
+                  </h3>
+
+                  {/* DESCRIPTION – ONLY CENTER */}
+                  {Math.abs(offset) <= 1 && (
+                    <p className="text-[#4b4b63] text-sm leading-relaxed">
+                      {feature.description}
+                    </p>
+                  )}
+                </div>
+              </div>
+            );
+          })}
+
+          {/* LEFT CONTROL */}
+          <button
+            onClick={() =>
+              setActive((prev) => (prev === 0 ? features.length - 1 : prev - 1))
+            }
+            className="absolute left-0 w-12 h-12 rounded-full bg-[#e5c2f3] shadow flex items-center justify-center text-xl hover:scale-110 transition z-50 cursor-pointer"
+          >
+            ‹
+          </button>
+
+          {/* RIGHT CONTROL */}
+          <button
+            onClick={() => setActive((prev) => (prev + 1) % features.length)}
+            className="absolute right-0 w-12 h-12 rounded-full bg-[#e5c2f3] shadow flex items-center justify-center text-xl hover:scale-110 transition z-50 cursor-pointer"
+          >
+            ›
+          </button>
         </div>
 
-        {/* CTA Button */}
-        <button className="bg-white text-[#6730CF] px-6 py-2 rounded-full shadow-md hover:shadow-lg hover:scale-105 font-medium transition-all duration-300">
-          See All Features
-        </button>
+        {/* CTA */}
+        <div className="mt-12">
+          <NavLink
+            to="/features"
+            className="inline-flex items-center gap-2 text-[#AA60C8] font-medium hover:gap-3 transition-all"
+          >
+            See All Features →
+          </NavLink>
+        </div>
       </div>
     </section>
   );
