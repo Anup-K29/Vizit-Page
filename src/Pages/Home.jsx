@@ -4,6 +4,7 @@ import { HeroSection } from "../Components/HeroSection.jsx";
 import { FeaturesSection } from "@/Components/FeatureSection.jsx";
 import { OverviewSection } from "@/Components/OverViewSection.jsx";
 import { Lobby } from "@/Components/Lobby.jsx";
+import { SeamlessEntrySection } from "@/Components/SeamlessEntrySection.jsx";
 
 export const Home = () => {
   return (
@@ -12,13 +13,7 @@ export const Home = () => {
       <FeaturesSection/>
       <OverviewSection/>
       <Lobby/>
-      {/* <VisitorIntro/>
-      <VisitorTypes/>
-      <FeatureBlocksSection />
-      <KioskSection/>
-      <WorkplaceFeatures/>
-      <DashboardOverview/>
-      <TestimonialsSection/> */}
+      <SeamlessEntrySection/>
     </>
   );
 };  
