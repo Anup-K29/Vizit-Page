@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 
-import CheckInImg from "../assets/images/newHomePage/CheckInImg.png";
-import SecurityImg from "../assets/images/newHomePage/SecurityImg.png";
-import AnalyticsImg from "../assets/images/newHomePage/AnalyticsImg.png";
+import CheckInImg from "../assets/images/HomePage/CheckInImg.png";
+import SecurityImg from "../assets/images/HomePage/SecurityImg.png";
+import AnalyticsImg from "../assets/images/HomePage/AnalyticsImg.png";
 
 const features = [
   {
@@ -53,7 +53,7 @@ export const FeaturesSection = () => {
     stopAutoPlay();
     intervalRef.current = setInterval(() => {
       setActive((prev) => (prev + 1) % features.length);
-    }, 2000);
+    }, 1800);
   };
 
   const stopAutoPlay = () => {
@@ -98,13 +98,13 @@ export const FeaturesSection = () => {
             let blur = "blur(0px)";
 
             if (Math.abs(offset) === 1) {
-              opacity = 0.7; // just behind → opacity only
+              opacity = 0.47; // just behind → opacity only
             }
 
-            if (Math.abs(offset) === 2) {
-              opacity = 0.35; // further behind
-              blur = "blur(2px)"; // blur only here
-            }
+            // if (Math.abs(offset) === 2) {
+            //   opacity = 0.35; // further behind
+            //   blur = "blur(2px)"; // blur only here
+            // }
 
             const zIndex = 30 - Math.abs(offset) * 10;
 
@@ -146,22 +146,22 @@ export const FeaturesSection = () => {
           })}
 
           {/* LEFT CONTROL */}
-          <button
+          {/* <button
             onClick={() =>
               setActive((prev) => (prev === 0 ? features.length - 1 : prev - 1))
             }
             className="absolute left-0 w-12 h-12 rounded-full bg-[#e5c2f3] shadow flex items-center justify-center text-xl hover:scale-110 transition z-50 cursor-pointer"
           >
             ‹
-          </button>
+          </button> */}
 
           {/* RIGHT CONTROL */}
-          <button
+          {/* <button
             onClick={() => setActive((prev) => (prev + 1) % features.length)}
             className="absolute right-0 w-12 h-12 rounded-full bg-[#e5c2f3] shadow flex items-center justify-center text-xl hover:scale-110 transition z-50 cursor-pointer"
           >
             ›
-          </button>
+          </button> */}
         </div>
 
         {/* CTA */}

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import HeroCarousel1 from "../assets/images/newHomePage/HeroCarousel1.png";
-import HeroCarousel2 from "../assets/images/newHomePage/HeroCarousel2.png";
-import HeroCarousel3 from "../assets/images/newHomePage/HeroCarousel3.png";
+import HeroCarousel1 from "../assets/images/HomePage/HeroCarousel1.png";
+import HeroCarousel2 from "../assets/images/HomePage/HeroCarousel2.png";
+import HeroCarousel3 from "../assets/images/HomePage/HeroCarousel3.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
