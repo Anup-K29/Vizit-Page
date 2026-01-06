@@ -65,7 +65,7 @@ export const FAQs = () => {
 
   return (
     <section className="w-full bg-white py-24">
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-3xl mx-auto px-6">
         {/* HEADING */}
         <h2 className="text-center text-3xl md:text-5xl font-bold mb-16">
           Frequently Asked Questions

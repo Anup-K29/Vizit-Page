@@ -4,6 +4,10 @@ import { NavLink } from "react-router-dom";
 import CheckInImg from "../assets/images/HomePage/CheckInImg.png";
 import SecurityImg from "../assets/images/HomePage/SecurityImg.png";
 import AnalyticsImg from "../assets/images/HomePage/AnalyticsImg.png";
+import RightArrow from "../assets/images/HomePage/RightArrow.png";
+import LeftArrow from "../assets/images/HomePage/LeftArrow.png";
+
+
 
 const features = [
   {
@@ -146,22 +150,22 @@ export const FeaturesSection = () => {
           })}
 
           {/* LEFT CONTROL */}
-          {/* <button
+          <button
             onClick={() =>
               setActive((prev) => (prev === 0 ? features.length - 1 : prev - 1))
             }
-            className="absolute left-0 w-12 h-12 rounded-full bg-[#e5c2f3] shadow flex items-center justify-center text-xl hover:scale-110 transition z-50 cursor-pointer"
+            className="absolute left-0 w-12 h-12 flex items-center justify-center text-xl hover:scale-110 transition z-50 cursor-pointer"
           >
-            ‹
-          </button> */}
+            <img src={LeftArrow} alt="" />
+          </button>
 
           {/* RIGHT CONTROL */}
-          {/* <button
+          <button
             onClick={() => setActive((prev) => (prev + 1) % features.length)}
-            className="absolute right-0 w-12 h-12 rounded-full bg-[#e5c2f3] shadow flex items-center justify-center text-xl hover:scale-110 transition z-50 cursor-pointer"
+            className="absolute right-0 w-12 h-12  flex items-center justify-center text-xl hover:scale-110 transition z-50 cursor-pointer"
           >
-            ›
-          </button> */}
+            <img src={RightArrow} alt="" />
+          </button>
         </div>
 
         {/* CTA */}
