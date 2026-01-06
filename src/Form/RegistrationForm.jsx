@@ -169,7 +169,7 @@ function RegistrationForm() {
       <div className="flex justify-center mt-6">
         <button
           onClick={() => setShowPopup(false)}
-          className="px-5 py-2 bg-indigo-600 text-white rounded-md shadow-md hover:bg-indigo-700 cursor-pointer transition-all "
+          className="px-5 py-2 bg-[#AA60C8] text-white rounded-md shadow-md hover:bg-[#AA60C8] cursor-pointer transition-all "
         >
           Close
         </button>
@@ -208,7 +208,7 @@ function RegistrationForm() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Name */}
               <div>
-                <label className="text-sm font-medium text-gray-700">
+                <label className="text-sm font-medium text-black">
                   Name <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -216,7 +216,7 @@ function RegistrationForm() {
                   placeholder="Enter your name"
                   {...register("name")}
                   required
-                  className="mt-1 w-full border rounded-md px-3 py-2 shadow-sm text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                  className="mt-1 w-full border rounded-md px-3 py-2 shadow-md text-sm focus:ring-2 focus:ring-[#AA60C8] focus:border-[#AA60C8]"
                 />
                 {errors.name && (
                   <p className="text-red-500 text-xs mt-1">
@@ -235,7 +235,7 @@ function RegistrationForm() {
                   placeholder="Enter company name"
                   {...register("companyName")}
                   required
-                  className="mt-1 w-full border rounded-md px-3 py-2 shadow-sm text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                  className="mt-1 w-full border rounded-md px-3 py-2 shadow-md text-sm focus:ring-2 focus:ring-[#AA60C8] focus:border-[#AA60C8]"
                 />
                 {errors.companyName && (
                   <p className="text-red-500 text-xs mt-1">
@@ -252,7 +252,7 @@ function RegistrationForm() {
                 <select
                   {...register("countryCode")}
                   value={watch("countryCode")}
-                  className="mt-1 w-full border rounded-md px-3 py-2 shadow-sm text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                  className="mt-1 w-full border rounded-md px-3 py-2 shadow-md text-sm focus:ring-2 focus:ring-[#AA60C8] focus:border-[#AA60C8]"
                 >
                   {countryList.map((c) => (
                     <option key={c.country} value={c.calling_code}>
@@ -278,7 +278,7 @@ function RegistrationForm() {
                   {...register("phoneNumber")}
                   maxLength={10}
                   required
-                  className="mt-1 w-full border rounded-md px-3 py-2 shadow-sm text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                  className="mt-1 w-full border rounded-md px-3 py-2 shadow-md text-sm focus:ring-2 focus:ring-[#AA60C8] focus:border-[#AA60C8]"
                 />
                 {errors.phoneNumber && (
                   <p className="text-red-500 text-xs mt-1">
@@ -297,7 +297,7 @@ function RegistrationForm() {
                   placeholder="Enter your email"
                   {...register("email")}
                   required
-                  className="mt-1 w-full border rounded-md px-3 py-2 shadow-sm text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                  className="mt-1 w-full border rounded-md px-3 py-2 shadow-md text-sm focus:ring-2 focus:ring-[#AA60C8] focus:border-[#AA60C8]"
                 />
                 {errors.email && (
                   <p className="text-red-500 text-xs mt-1">
@@ -316,7 +316,7 @@ function RegistrationForm() {
                   placeholder="Enter your password"
                   {...register("password")}
                   required
-                  className="mt-1 w-full border rounded-md px-3 py-2 shadow-sm text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                  className="mt-1 w-full border rounded-md px-3 py-2 shadow-md text-sm focus:ring-2 focus:ring-[#AA60C8] focus:border-[#AA60C8]"
                 />
                 {errors.password && (
                   <p className="text-red-500 text-xs mt-1">
@@ -334,7 +334,7 @@ function RegistrationForm() {
                 </label>
                 <select
                   {...register("category")}
-                  className="mt-1 w-full border rounded-md px-3 py-2 shadow-sm text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                  className="mt-1 w-full border rounded-md px-3 py-2 shadow-md text-sm focus:ring-2 focus:ring-[#AA60C8] focus:border-[#AA60C8]"
                 >
                   <option value="">Select a category</option>
                   {categories.map((cat) => (
@@ -357,7 +357,7 @@ function RegistrationForm() {
                 </label>
                 <select
                   {...register("hearAboutUs")}
-                  className="mt-1 w-full border rounded-md px-3 py-2 shadow-sm text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                  className="mt-1 w-full border rounded-md px-3 py-2 shadow-md text-sm focus:ring-2 focus:ring-[#AA60C8] focus:border-[#AA60C8]"
                 >
                   <option value="">Select an option</option>
                   {hearAboutUsOptions.map((o) => (
@@ -378,8 +378,8 @@ function RegistrationForm() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-indigo-600 text-white py-2.5 rounded-md shadow-md text-sm font-medium hover:bg-indigo-700 
-                     transition disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-[#AA60C8] text-white py-2.5 rounded-md shadow-2xl text-md font-medium  hover:bg-white hover:text-[#AA60C8] border border-[#AA60C8] 
+                     transition disabled:opacity-50 cursor-pointer "
             >
               {loading ? "Submitting..." : "Create Account"}
             </button>

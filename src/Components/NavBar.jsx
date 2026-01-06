@@ -17,7 +17,7 @@ export const NavBar = () => {
   
     <header
       className="
-      w-full fixed top-0 left-0 z-50
+      w-full fixed top-9 left-0 z-50
       bg-white/70 backdrop-blur-md
       border-b border-[#d1c4e9] opacity-90 shadow-md
     "
@@ -53,14 +53,14 @@ export const NavBar = () => {
           <a
             href="https://vizit.nxiappworld.com/"
             target="_blank"
-            className="px-5 py-2 rounded-full border border-[#AA60C8] text-[#AA60C8] text-[15px] font-medium hover:bg-[#AA60C8] hover:text-white transition-all"
+            className="px-5 py-2 rounded-full border border-[#AA60C8] text-[#AA60C8] text-[15px] font-medium hover:bg-[#AA60C8] hover:text-white transition-all shadow-lg"
           >
             Login
           </a>
 
           <NavLink
             to="/registration-form"
-            className="px-5 py-2 rounded-full bg-[#AA60C8] text-white text-[15px] font-medium hover:bg-white hover:text-[#AA60C8] border border-[#AA60C8] transition-all"
+            className="px-5 py-2 rounded-full bg-[#AA60C8] text-white text-[15px] font-medium hover:bg-white hover:text-[#AA60C8] border border-[#AA60C8] transition-all shadow-lg"
           >
             Get Started
           </NavLink>
