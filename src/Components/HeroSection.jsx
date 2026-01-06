@@ -20,7 +20,7 @@ export const heroSlides = [
   },
   {
     // badge: "Smart Visitor Experience",
-    title: "Secure Your Wrok Environment",
+    title: "Secure Your Work Environment",
     description:
       "Protect your facility with instant ID verification, custom health screening, and real-time alerts. Know exactly who is in your building at any given moment",
     image: HeroCarousel2,
@@ -122,6 +122,7 @@ export const HeroSection = () => {
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         pagination={{ clickable: true, el: ".hero-pagination" }}
         loop
+       
         className="max-w-7xl mx-auto"
       >
         {heroSlides.map((slide, index) => (
