@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
-import {heroSlides} from "../DataObjects/HeroSectionHome.js"
+import { heroSlides } from "../DataObjects/HeroSectionHome.js";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
@@ -8,8 +8,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-
-"LOGIC BEHIND THE HERO SECTION WITHOUT SWIPPER -- PREVIOUSLY USED CODE "
+("LOGIC BEHIND THE HERO SECTION WITHOUT SWIPPER -- PREVIOUSLY USED CODE ");
 
 // export const HeroSection = () => {
 //   const [current, setCurrent] = useState(0);
@@ -97,7 +96,6 @@ export const HeroSectionHome = () => {
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         pagination={{ clickable: true, el: ".hero-pagination" }}
         loop
-       
         className="max-w-7xl mx-auto"
       >
         {heroSlides.map((slide, index) => (
@@ -108,14 +106,14 @@ export const HeroSectionHome = () => {
                 <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold text-[#0f0f1a] leading-tight mb-6">
                   {slide.title}
                 </h1>
-{/* max-w-xl */}
+                {/* max-w-xl */}
                 <p className="text-[#4b4b63] text-2xl leading-relaxed min-w-xl mb-10">
                   {slide.description}
                 </p>
 
                 <NavLink
                   to="/registration-form"
-                  className="inline-flex items-center gap-2 bg-[#AA60C8] text-white px-6 py-3 rounded-full font-medium hover:opacity-90 transition"
+                  className="inline-flex items-center gap-2 bg-[white] text-[#AA60C8] px-6 py-3 rounded-full font-medium hover:opacity-90 transition border-2 border-[#AA60C8] hover:bg-[#AA60C8] hover:text-[white]"
                 >
                   Get Started →
                 </NavLink>

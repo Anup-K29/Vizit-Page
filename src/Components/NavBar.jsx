@@ -37,7 +37,7 @@ export const NavBar = () => {
                 className={({ isActive }) =>
                   `text-[15px] font-medium transition-colors duration-200 ${
                     isActive
-                      ? "text-[#6730CF]"
+                      ? "text-[#AA60C8]"
                       : "text-black hover:text-[#AA60C8]"
                   }`
                 }
@@ -53,14 +53,14 @@ export const NavBar = () => {
           <a
             href="https://vizit.nxiappworld.com/"
             target="_blank"
-            className="px-5 py-2 rounded-full border border-[#AA60C8] text-[#AA60C8] text-[15px] font-medium hover:bg-[#AA60C8] hover:text-white transition-all shadow-lg"
+            className="px-5 py-2 rounded-full border-2 border-[#AA60C8] text-[#AA60C8] text-[15px] font-medium hover:bg-[#AA60C8] hover:text-white transition-all shadow-lg "
           >
             Login
           </a>
 
           <NavLink
             to="/registration-form"
-            className="px-5 py-2 rounded-full bg-[#AA60C8] text-white text-[15px] font-medium hover:bg-white hover:text-[#AA60C8] border border-[#AA60C8] transition-all shadow-lg"
+            className="px-5 py-2 rounded-full bg-[#AA60C8] text-white text-[15px] font-medium hover:bg-white hover:text-[#AA60C8] border-2 border-[#AA60C8] transition-all shadow-lg"
           >
             Get Started
           </NavLink>

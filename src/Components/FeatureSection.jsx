@@ -3,10 +3,7 @@ import { NavLink } from "react-router-dom";
 import RightArrow from "../assets/images/HomePage/RightArrow.png";
 import LeftArrow from "../assets/images/HomePage/LeftArrow.png";
 
-import {features} from "../DataObjects/FeatureSection.js"
-
-
-
+import { features } from "../DataObjects/FeatureSection.js";
 
 export const FeaturesSection = () => {
   const [active, setActive] = useState(0);
@@ -30,9 +27,10 @@ export const FeaturesSection = () => {
     if (intervalRef.current) clearInterval(intervalRef.current);
   };
 
-  return ( //px-6 py-24
+  return (
+    //px-6 py-24
     <section className="w-full bg-white py-12 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-40 text-center"> 
+      <div className="max-w-7xl mx-auto px-40 text-center">
         {/* HEADING */}
         <h2 className="text-3xl md:text-4xl font-bold mb-16">
           What Does Vizit Do?
@@ -83,13 +81,15 @@ export const FeaturesSection = () => {
                 key={index}
                 className="absolute transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]"
                 style={{
-                  transform: `translateX(${translateX}px) scale(${scale}) rotateY(${offset * +30}deg)`, //12
+                  transform: `translateX(${translateX}px) scale(${scale}) rotateY(${
+                    offset * +30
+                  }deg)`, //12
                   opacity,
                   filter: blur,
                   zIndex,
                 }}
               >
-                <div className="bg-white rounded-3xl p-8 w-65 shadow-2xl">
+                <div className="bg-white border-[#AA60C8] border-b-4 border-t-4 rounded-3xl p-8 w-65 shadow-2xl">
                   {/* IMAGE */}
                   <div className="flex justify-center mb-6">
                     <img
@@ -138,7 +138,7 @@ export const FeaturesSection = () => {
         <div className="mt-12">
           <NavLink
             to="/features"
-            className="inline-flex items-center gap-2 text-[#AA60C8] font-medium hover:gap-3 transition-all"
+            className="inline-flex items-center rounded-full gap-2 border-2 border-[#AA60C8] text-[#AA60C8] font-medium hover:gap-3 transition-all px-4 py-2 hover:bg-[#AA60C8] hover:text-white"
           >
             See All Features →
           </NavLink>

@@ -2,7 +2,7 @@ import React from "react";
 
 export const FeatureCardBlocks = ({ image, title, description }) => {
   return (
-    <div className="rounded-xl border border-purple-300 bg-purple-50 p-5 transition hover:shadow-md">
+    <div className="rounded-xl border-2 border-purple-300 bg-purple-50 p-5 transition hover:shadow-md">
       <div className="flex items-start gap-4">
         {/* Image */}
         <div className="mb-3 h-10 w-10">

@@ -25,7 +25,7 @@ export const FAQs = () => {
             return (
               <div
                 key={index}
-                className="border rounded-xl px-6 py-4 cursor-pointer transition"
+                className=" border rounded-xl border-[#f0ddf8] px-6 py-4 cursor-pointer transition"
                 onClick={() => toggle(index)}
               >
                 {/* QUESTION */}
