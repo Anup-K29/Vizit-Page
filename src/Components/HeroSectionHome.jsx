@@ -114,7 +114,7 @@ export const heroSlides = [
 //   );
 // };
 
-export const HeroSection = () => {
+export const HeroSectionHome = () => {
   return (
     <section className="w-full pt-20 pb-20 px-6 bg-white">
       <Swiper

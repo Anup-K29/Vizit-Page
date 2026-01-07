@@ -1,5 +1,5 @@
 import React from "react";
-import { HeroSection } from "../Components/HeroSection.jsx";
+import { HeroSectionHome } from "../Components/HeroSectionHome.jsx";
 import { FeaturesSection } from "@/Components/FeatureSection.jsx";
 import { OverviewSection } from "@/Components/OverViewSection.jsx";
 import { Lobby } from "@/Components/Lobby.jsx";
@@ -11,7 +11,7 @@ import { FAQs } from "@/Components/FAQs.jsx";
 export const Home = () => {
   return (
     <>
-      <HeroSection />
+      <HeroSectionHome />
       <FeaturesSection />
       <OverviewSection />
       <Lobby />
