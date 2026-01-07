@@ -1,46 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
-
-import CheckInImg from "../assets/images/HomePage/CheckInImg.png";
-import SecurityImg from "../assets/images/HomePage/SecurityImg.png";
-import AnalyticsImg from "../assets/images/HomePage/AnalyticsImg.png";
 import RightArrow from "../assets/images/HomePage/RightArrow.png";
 import LeftArrow from "../assets/images/HomePage/LeftArrow.png";
 
+import {features} from "../DataObjects/FeatureSection.js"
 
 
-const features = [
-  {
-    title: "Seamless Check-In",
-    image: CheckInImg,
-    description:
-      "Welcome guests in seconds with touchless QR entries and instant host alerts.",
-  },
-  {
-    title: "Security & Compliance",
-    image: SecurityImg,
-    description:
-      "Secure your workspace with digital NDAs, ID verification, and automated audit trails.",
-  },
-  {
-    title: "Real-Time Analytics",
-    image: AnalyticsImg,
-    description:
-      "Track occupancy and visitor trends with a live dashboard for smarter facilities management.",
-  },
-  {
-    title: "Security & Compliance",
-    image: SecurityImg,
-    description:
-      "Secure your workspace with digital NDAs, ID verification, and automated audit trails.",
-  },
-  {
-    title: "Real-Time Analytics",
-    image: AnalyticsImg,
-    description:
-      "Track occupancy and visitor trends with a live dashboard for smarter facilities management.",
-  },
-];
+
 
 export const FeaturesSection = () => {
   const [active, setActive] = useState(0);

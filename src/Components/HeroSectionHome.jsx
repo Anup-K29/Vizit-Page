@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import HeroCarousel1 from "../assets/images/HomePage/HeroCarousel1.png";
-import HeroCarousel2 from "../assets/images/HomePage/HeroCarousel2.png";
-import HeroCarousel3 from "../assets/images/HomePage/HeroCarousel3.png";
+import {heroSlides} from "../DataObjects/HeroSectionHome.js"
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
@@ -10,29 +8,6 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-export const heroSlides = [
-  {
-    // badge: "UK’s #1 Visitor and Contractor Software",
-    title: "No More Paper Log Books",
-    description:
-      "Move your front desk to the cloud. Track visitors, verify IDs, and stay compliant without the paperwork with a seamless and digital solution.",
-    image: HeroCarousel1,
-  },
-  {
-    // badge: "Smart Visitor Experience",
-    title: "Secure Your Work Environment",
-    description:
-      "Protect your facility with instant ID verification, custom health screening, and real-time alerts. Know exactly who is in your building at any given moment",
-    image: HeroCarousel2,
-  },
-  {
-    // badge: "Smart Visitor Experience",
-    title: "Insights That Drive Action",
-    description:
-      "Turn visitor traffic into clear reports. Track peak hours, monitor compliance, and export audit-ready logs in seconds.",
-    image: HeroCarousel3,
-  },
-];
 
 "LOGIC BEHIND THE HERO SECTION WITHOUT SWIPPER -- PREVIOUSLY USED CODE "
 
