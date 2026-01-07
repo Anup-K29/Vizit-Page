@@ -22,14 +22,14 @@ export const ContactUs = () => {
           <div className="flex items-center gap-4">
             <NavLink
               to="/contact"
-              className="px-6 py-2 rounded-full border border-[#AA60C8] text-[#AA60C8] font-medium text-2xl hover:bg-[#AA60C8] hover:text-white transition"
+              className="px-6 py-2 rounded-lg border border-[#AA60C8] text-[#AA60C8] font-medium text-2xl hover:bg-[#AA60C8] hover:text-white transition"
             >
               Contact Us
             </NavLink>
 
             <NavLink
               to="/registration-form"
-              className="px-6 py-2 rounded-full bg-[#AA60C8] text-white font-medium text-2xl hover:opacity-90 transition"
+              className="px-6 py-2 rounded-lg bg-[#AA60C8] hover:bg-white  text-white hover:text-[#AA60C8] font-medium text-2xl hover:opacity-90 transition border border-[#AA60C8]"
             >
               Free Trial
             </NavLink>
