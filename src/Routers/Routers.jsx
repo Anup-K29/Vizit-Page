@@ -4,6 +4,7 @@ import Layout from "../Components/Layout";
 import {Home} from "../Pages/Home.jsx"
 import RegistrationForm from "../Form/RegistrationForm.jsx";
 import { Features } from "@/Pages/Features";
+import { Solutions } from "@/Pages/Solutions";
 
 
 
@@ -15,8 +16,9 @@ export const Routers = () => {
 
           <Route path="/" element={<Layout />}>
             <Route path='/' element={<Home/>}/>
-            <Route path="registration-form" element={<RegistrationForm/>}/>
             <Route path="features" element={<Features/>}/>
+            <Route path="solutions" element={<Solutions/>}/>
+            <Route path="registration-form" element={<RegistrationForm/>}/>
           </Route>
         
         </Routes>

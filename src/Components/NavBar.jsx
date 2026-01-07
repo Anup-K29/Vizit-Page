@@ -3,9 +3,10 @@ import { NavLink } from "react-router-dom";
 import Logo from "../assets/images/vizit-logo.png";
 
 const navItems = [
+  {label:"Home",path:"/"},
   { label: "Features", path: "/features" },
   { label: "Solutions", path: "/solutions" },
-  { label: "Pricing", path: "/pricing" },
+  // { label: "Pricing", path: "/pricing" },
 ];
 
 export const NavBar = () => {
@@ -14,7 +15,6 @@ export const NavBar = () => {
    ${isActive ? "text-[#6730CF]" : "text-black hover:text-[#6730CF]"}`;
 
   return (
-  
     <header
       className="
       w-full fixed top-9 left-0 z-50
