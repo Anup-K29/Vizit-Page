@@ -1,8 +1,8 @@
 
 import React from "react";
 
-import HomePage1 from "../assets/images/HomePage/HomePage1.png"
-import HomePage2 from "../assets/images/HomePage/HomePage2.png"
+import HomePage1 from "../assets/images/HomePage/HomePage1.svg"
+import HomePage2 from "../assets/images/HomePage/HomePage2.svg"
 
 export const OverviewSection = () => {
   return (

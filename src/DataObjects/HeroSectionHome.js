@@ -1,7 +1,7 @@
 
-import HeroCarousel1 from "../assets/images/HomePage/HeroCarousel1.png";
-import HeroCarousel2 from "../assets/images/HomePage/HeroCarousel2.png";
-import HeroCarousel3 from "../assets/images/HomePage/HeroCarousel3.png";
+import HeroCarousel1 from "../assets/images/HomePage/HeroCarousel1.svg";
+import HeroCarousel2 from "../assets/images/HomePage/HeroCarousel2.svg";
+import HeroCarousel3 from "../assets/images/HomePage/HeroCarousel3.svg";
 
 
 export const heroSlides = [
