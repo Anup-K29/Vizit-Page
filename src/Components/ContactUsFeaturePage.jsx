@@ -29,6 +29,8 @@ export const ContactUsFeaturePage = () => {
             <img
               src={ContactIllustration}
               alt="Contact illustration"
+              loading="lazy"
+              decoding="async"
               className="w-full object-contain"
             />
           </div>

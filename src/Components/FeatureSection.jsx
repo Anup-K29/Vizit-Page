@@ -95,6 +95,8 @@ export const FeaturesSection = () => {
                     <img
                       src={feature.image}
                       alt={feature.title}
+                      loading="lazy"
+                      decoding="async"
                       className="w-76"
                     />
                   </div>

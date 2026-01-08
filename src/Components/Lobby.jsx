@@ -34,6 +34,8 @@ export const Lobby = () => {
                 <img
                   src={item.image}
                   alt={item.title}
+                  loading="lazy"
+                  decoding="async"
                   className="rounded-xl shadow-xl w-full max-w-xl"
                 />
               </div>

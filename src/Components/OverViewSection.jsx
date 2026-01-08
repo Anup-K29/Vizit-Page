@@ -38,6 +38,8 @@ export const OverviewSection = () => {
             <img
               src={HomePage1}
               alt="Dashboard overview"
+              loading="lazy"
+              decoding="async"
               className="rounded-xl w-full max-w-xl"
             />
           </div>
@@ -72,6 +74,8 @@ export const OverviewSection = () => {
             <img
               src={HomePage2}
               alt="Visitor management table"
+              loading="lazy"
+              decoding="async"
               className="rounded-xl w-full max-w-xl"
             />
           </div>

@@ -36,6 +36,8 @@ const SolutionBlock = ({
         <img
           src={image}
           alt={title}
+          loading="lazy"
+          decoding="async"
           className="w-full rounded-xl object-contain " 
         />
       </div>

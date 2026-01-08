@@ -22,6 +22,8 @@ export const TestimonialSection = () => {
                 <img
                   src={item.image}
                   alt={item.author}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>

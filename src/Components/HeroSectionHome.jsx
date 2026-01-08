@@ -121,7 +121,14 @@ export const HeroSectionHome = () => {
 
               {/* ===== RIGHT IMAGE ===== */}
               <div className="relative flex justify-center lg:justify-end">
-                <img src={slide.image} alt={slide.title} className="w-full " />
+                <img 
+                src={slide.image} 
+                alt={slide.title} 
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                className="w-full "
+                />
               </div>
             </div>
           </SwiperSlide>
