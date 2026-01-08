@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-export const ContactUs = () => {
+export const ContactUsHomePage = () => {
   return (
     <section className="w-full bg-white py-24">
       <div className="max-w-6xl mx-auto px-6">
@@ -22,14 +22,14 @@ export const ContactUs = () => {
           <div className="flex items-center gap-4">
             <NavLink
               to="/contact"
-              className="px-6 py-2 rounded-lg border-2 border-[#AA60C8] text-[#AA60C8] font-medium text-2xl hover:bg-[#AA60C8] hover:text-white transition"
+              className="px-6 py-2 rounded-lg border-2 border-[#AA60C8] text-[#AA60C8] font-medium text-2xl hover:bg-[#AA60C8] hover:text-white transition shadow-xl"
             >
               Contact Us
             </NavLink>
 
             <NavLink
               to="/registration-form"
-              className="px-6 py-2 rounded-lg bg-[#AA60C8] hover:bg-white  text-white hover:text-[#AA60C8] font-medium text-2xl hover:opacity-90 transition border-2 border-[#AA60C8]"
+              className="px-6 py-2 rounded-lg bg-[#AA60C8] hover:bg-white  text-white hover:text-[#AA60C8] font-medium text-2xl hover:opacity-90 transition border-2 border-[#AA60C8] shadow-xl"
             >
               Free Trial
             </NavLink>

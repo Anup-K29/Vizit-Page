@@ -25,7 +25,7 @@ export const NavBar = () => {
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <NavLink to="/">
-          <img className="w-20" src={Logo} alt="logo" />
+          <img className="w-25" src={Logo} alt="logo" />
         </NavLink>
 
         {/* Links */}
@@ -35,7 +35,7 @@ export const NavBar = () => {
               <NavLink
                 to={item.path}
                 className={({ isActive }) =>
-                  `text-[15px] font-medium transition-colors duration-200 ${
+                  `text-[18px] font-medium transition-colors duration-200 ${
                     isActive
                       ? "text-[#AA60C8]"
                       : "text-black hover:text-[#AA60C8]"
@@ -53,14 +53,14 @@ export const NavBar = () => {
           <a
             href="https://vizit.nxiappworld.com/"
             target="_blank"
-            className="px-5 py-2 rounded-full border-2 border-[#AA60C8] text-[#AA60C8] text-[15px] font-medium hover:bg-[#AA60C8] hover:text-white transition-all shadow-lg "
+            className="px-5 py-2 rounded-full border-2 border-[#AA60C8] text-[#AA60C8] text-[18px] font-medium hover:bg-[#AA60C8] hover:text-white transition-all shadow-lg "
           >
             Login
           </a>
 
           <NavLink
             to="/registration-form"
-            className="px-5 py-2 rounded-full bg-[#AA60C8] text-white text-[15px] font-medium hover:bg-white hover:text-[#AA60C8] border-2 border-[#AA60C8] transition-all shadow-lg"
+            className="px-5 py-2 rounded-full bg-[#AA60C8] text-white text-[18px] font-medium hover:bg-white hover:text-[#AA60C8] border-2 border-[#AA60C8] transition-all shadow-lg"
           >
             Get Started
           </NavLink>

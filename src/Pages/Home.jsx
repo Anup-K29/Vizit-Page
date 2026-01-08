@@ -5,7 +5,7 @@ import { OverviewSection } from "@/Components/OverViewSection.jsx";
 import { Lobby } from "@/Components/Lobby.jsx";
 import { SeamlessEntrySection } from "@/Components/SeamlessEntrySection.jsx";
 import { TestimonialSection } from "@/Components/TestimonialSection.jsx";
-import { ContactUs } from "@/Components/ContactUs.jsx";
+import { ContactUsHomePage } from "@/Components/ContactUsHomePage.jsx";
 import { FAQs } from "@/Components/FAQs.jsx";
 
 export const Home = () => {
@@ -17,7 +17,7 @@ export const Home = () => {
       <Lobby />
       <SeamlessEntrySection />
       <TestimonialSection />
-      <ContactUs />
+      <ContactUsHomePage />
       <FAQs />
     </>
   );

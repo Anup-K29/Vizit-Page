@@ -138,7 +138,7 @@ export const FeaturesSection = () => {
         <div className="mt-12">
           <NavLink
             to="/features"
-            className="inline-flex items-center rounded-full gap-2 border-2 border-[#AA60C8] text-[#AA60C8] font-medium hover:gap-3 transition-all px-4 py-2 hover:bg-[#AA60C8] hover:text-white"
+            className="inline-flex items-center rounded-full gap-2 border-2 border-[#AA60C8] text-[#AA60C8] font-medium hover:gap-3 transition-all px-4 py-2 hover:bg-[#AA60C8] hover:text-white "
           >
             See All Features →
           </NavLink>
