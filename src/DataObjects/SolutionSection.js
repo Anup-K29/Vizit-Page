@@ -1,7 +1,7 @@
 
-import HeroCarousel1 from "../assets/images/HomePage/HeroCarousel1.svg";
-import HeroCarousel2 from "../assets/images/HomePage/HeroCarousel2.svg";
-import HeroCarousel3 from "../assets/images/HomePage/HeroCarousel3.svg";
+import HeroCarousel1 from "../assets/images/HomePage/HeroCarousel1.webp";
+import HeroCarousel2 from "../assets/images/HomePage/HeroCarousel2.webp";
+import HeroCarousel3 from "../assets/images/HomePage/HeroCarousel3.webp";
 
 export const solutionsData = [
   {
