@@ -10,7 +10,7 @@ export const AdvancedFeatureSuite = () => {
           {/* LEFT */}
           <div>
             <h2 className="text-6xl font-bold text-black">
-              Advanced Feature Suite
+              Advanced <br /> Feature Suite
             </h2>
 
             <p className="mt-8 max-w-md text-gray-600 text-2xl">
