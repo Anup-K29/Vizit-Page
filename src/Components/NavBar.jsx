@@ -51,7 +51,7 @@ export const NavBar = () => {
         {/* Right Buttons */}
         <div className="flex items-center gap-4">
           <a
-            href="https://vizit-admin.nxiappworld.com/"
+            href="https://vizit-v1.nxiappworld.com/"
             target="_blank"
             className="px-5 py-2 rounded-full border-2 border-[#AA60C8] text-[#AA60C8] text-[18px] font-medium hover:bg-[#AA60C8] hover:text-white transition-all shadow-lg "
           >
