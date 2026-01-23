@@ -26,7 +26,7 @@ const SolutionBlock = ({
           {description}
         </p>
 
-        <button className="mt-6 rounded-lg bg-[#AA60C8] px-6 py-3 text-md font-medium text-white transition hover:text-[#AA60C8] hover:bg-white border border-[#AA60C8] cursor-pointer">
+        <button className="mt-6 rounded-lg bg-[white] px-6 py-3 text-md font-medium text-[#AA60C8] transition hover:text-[white] hover:bg-[#AA60C8] border border-[#AA60C8] cursor-pointer">
           {buttonText}
         </button>
       </div>

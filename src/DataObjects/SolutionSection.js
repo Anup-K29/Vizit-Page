@@ -1,34 +1,47 @@
 
-import HeroCarousel1 from "../assets/images/HomePage/HeroCarousel1.webp";
-import HeroCarousel2 from "../assets/images/HomePage/HeroCarousel2.webp";
-import HeroCarousel3 from "../assets/images/HomePage/HeroCarousel3.webp";
+import CoworkingSpaceManagement from "../assets/images/SolutionPage/CoworkingSpaceManagement.webp";
+import IntelligentQueueFlowManagement from "../assets/images/SolutionPage/IntelligentQueueFlowManagement.webp";
+import SchoolCampusManagement from "../assets/images/SolutionPage/SchoolCampusManagement.webp";
+import HospitalClinicManagement from "../assets/images/SolutionPage/HospitalClinicManagement.webp";
+
 
 export const solutionsData = [
   {
     id: 1,
-    eyebrow: "All-in-One Employee Software",
-    title: "Employee Management",
+    eyebrow: "All-in-One Coworking Software",
+    title: "Coworking Space Management",
     description:
-      "Manage all aspects of your workplace with ease, from RFID sign-ins and multi-site management to instant fire roll call reporting, parcel tracking, and mobile app access.",
+      "Manage your shared workspace with ease, from seamless QR code check-ins and member desk bookings to automated host notifications, meeting room scheduling, and mobile app access.",
     buttonText: "Find out more",
-    image: HeroCarousel1,
+    image: CoworkingSpaceManagement,
   },
   {
     id: 2,
-    eyebrow: "Smart Visitor Experience",
-    title: "Visitor Management",
+    eyebrow: "Smart Visitor Management System",
+    title: "Intelligent Queue & Flow Management",
     description:
-      "Deliver a secure and seamless visitor experience with pre-registration, QR-based check-ins, real-time notifications, and compliance-ready access control.",
+      "Eliminate lobby congestion with automated queuing. QR check-ins and real-time updates ensure a seamless, professional entry experience for both guests and staff.",
     buttonText: "Find out more",
-    image: HeroCarousel2,
+    image: SchoolCampusManagement,
   },
   {
     id: 3,
-    eyebrow: "Smart Visitor Experience",
-    title: "Visitor Management",
+    eyebrow: "All-in-One Education Software",
+    title: "School & Campus Management",
     description:
-      "Deliver a secure and seamless visitor experience with pre-registration, QR-based check-ins, real-time notifications, and compliance-ready access control.",
+      "Manage your educational institution with ease, from secure student pick-up verification and automated visitor watchlists to instant emergency roll call reporting, volunteer tracking, and mobile app access.",
     buttonText: "Find out more",
-    image: HeroCarousel3,
+
+    image: IntelligentQueueFlowManagement,
+  },
+  {
+    id: 4,
+    eyebrow: "All-in-One Healthcare Software",
+    title: "Hospital & Clinic Management",
+    description:
+      "Manage every aspect of your medical facility with ease, from patient visitor tracking and digital health screenings to secure ward access control, real-time occupancy monitoring, and mobile app access.",
+    buttonText: "Find out more",
+
+    image: HospitalClinicManagement,
   },
 ];
