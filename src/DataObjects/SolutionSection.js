@@ -22,7 +22,7 @@ export const solutionsData = [
     description:
       "Eliminate lobby congestion with automated queuing. QR check-ins and real-time updates ensure a seamless, professional entry experience for both guests and staff.",
     buttonText: "Find out more",
-    image: SchoolCampusManagement,
+    image: IntelligentQueueFlowManagement,
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ export const solutionsData = [
       "Manage your educational institution with ease, from secure student pick-up verification and automated visitor watchlists to instant emergency roll call reporting, volunteer tracking, and mobile app access.",
     buttonText: "Find out more",
 
-    image: IntelligentQueueFlowManagement,
+    image: SchoolCampusManagement,
   },
   {
     id: 4,
