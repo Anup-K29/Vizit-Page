@@ -65,7 +65,44 @@ export const solutionsData = [
     buttonText: "Read More",
     image: IntelligentQueueFlowManagement,
 
-    
+    details: {
+      introHeading: "Empower Your Space with Frictionless Operations",
+      introSubtext:
+        "Focus on hospitality while Vizit handles the logistics of your shared workspace.",
+
+      sections: [
+        {
+          heading: "The Modern Workspace Experience",
+          text: `The magic of a coworking space isn't just the high-speed internet or the free coffee; it’s the community. However, community growth often brings operational friction. When a community manager is buried under a mountain of manual check-ins, guest registrations, and "Who booked the boardroom?" disputes, the human connection is lost.`
+        },
+        {
+          heading: "The Vizit Transformation",
+          text: `With Vizit, the "front desk" becomes a bridge rather than a barrier. Imagine a member walking in, scanning a QR code, and having their host notified instantly via Slack. No paper logs, no awkward waiting. Our Coworking Management suite automates the "boring stuff"—billing, desk allocation, and meeting room schedules—allowing your team to get back to what they do best: fostering collaboration and growing your brand. `
+        }
+      ],
+
+      features: [
+        {
+          title: "Member-First Check-ins",
+          desc: "Give your members the autonomy they crave. Seamless QR-code entries and instant host notifications mean no one is left waiting at the front desk."
+        },
+        {
+          title: "Smart Desk & Room Scheduling",
+          desc: "An intuitive interface for booking meeting rooms or hot desks in real-time, preventing double-bookings and optimizing space utility."
+        },
+        {
+          title: "Integrated Billing & Analytics",
+          desc: "Automatically track space usage to simplify invoicing and gain insights into peak hours and popular amenities."
+        },
+        {
+          title: "Mobile App Access",
+          desc: "A white-labeled experience that puts your co-working community in the palm of your members' hands."
+        }
+
+      ]
+    }
+
+
   },
   {
     id: 3,
@@ -77,6 +114,43 @@ export const solutionsData = [
     buttonText: "Read More",
 
     image: SchoolCampusManagement,
+
+    details: {
+      introHeading: "Empower Your Space with Frictionless Operations",
+      introSubtext:
+        "Focus on hospitality while Vizit handles the logistics of your shared workspace.",
+
+      sections: [
+        {
+          heading: "The Modern Workspace Experience",
+          text: `The magic of a coworking space isn't just the high-speed internet or the free coffee; it’s the community. However, community growth often brings operational friction. When a community manager is buried under a mountain of manual check-ins, guest registrations, and "Who booked the boardroom?" disputes, the human connection is lost.`
+        },
+        {
+          heading: "The Vizit Transformation",
+          text: `With Vizit, the "front desk" becomes a bridge rather than a barrier. Imagine a member walking in, scanning a QR code, and having their host notified instantly via Slack. No paper logs, no awkward waiting. Our Coworking Management suite automates the "boring stuff"—billing, desk allocation, and meeting room schedules—allowing your team to get back to what they do best: fostering collaboration and growing your brand. `
+        }
+      ],
+
+      features: [
+        {
+          title: "Member-First Check-ins",
+          desc: "Give your members the autonomy they crave. Seamless QR-code entries and instant host notifications mean no one is left waiting at the front desk."
+        },
+        {
+          title: "Smart Desk & Room Scheduling",
+          desc: "An intuitive interface for booking meeting rooms or hot desks in real-time, preventing double-bookings and optimizing space utility."
+        },
+        {
+          title: "Integrated Billing & Analytics",
+          desc: "Automatically track space usage to simplify invoicing and gain insights into peak hours and popular amenities."
+        },
+        {
+          title: "Mobile App Access",
+          desc: "A white-labeled experience that puts your co-working community in the palm of your members' hands."
+        }
+
+      ]
+    }
   },
   {
     id: 4, slug: "hospital-clinic-management",
@@ -87,6 +161,43 @@ export const solutionsData = [
     buttonText: "Read More",
 
     image: HospitalClinicManagement,
+
+    details: {
+      introHeading: "Empower Your Space with Frictionless Operations",
+      introSubtext:
+        "Focus on hospitality while Vizit handles the logistics of your shared workspace.",
+
+      sections: [
+        {
+          heading: "The Modern Workspace Experience",
+          text: `The magic of a coworking space isn't just the high-speed internet or the free coffee; it’s the community. However, community growth often brings operational friction. When a community manager is buried under a mountain of manual check-ins, guest registrations, and "Who booked the boardroom?" disputes, the human connection is lost.`
+        },
+        {
+          heading: "The Vizit Transformation",
+          text: `With Vizit, the "front desk" becomes a bridge rather than a barrier. Imagine a member walking in, scanning a QR code, and having their host notified instantly via Slack. No paper logs, no awkward waiting. Our Coworking Management suite automates the "boring stuff"—billing, desk allocation, and meeting room schedules—allowing your team to get back to what they do best: fostering collaboration and growing your brand. `
+        }
+      ],
+
+      features: [
+        {
+          title: "Member-First Check-ins",
+          desc: "Give your members the autonomy they crave. Seamless QR-code entries and instant host notifications mean no one is left waiting at the front desk."
+        },
+        {
+          title: "Smart Desk & Room Scheduling",
+          desc: "An intuitive interface for booking meeting rooms or hot desks in real-time, preventing double-bookings and optimizing space utility."
+        },
+        {
+          title: "Integrated Billing & Analytics",
+          desc: "Automatically track space usage to simplify invoicing and gain insights into peak hours and popular amenities."
+        },
+        {
+          title: "Mobile App Access",
+          desc: "A white-labeled experience that puts your co-working community in the palm of your members' hands."
+        }
+
+      ]
+    }
   },
   {
     id: 5, slug: "hotel-guest-management",
@@ -97,5 +208,42 @@ export const solutionsData = [
     buttonText: "Read More",
 
     image: HotelManagement,
+
+    details: {
+      introHeading: "Empower Your Space with Frictionless Operations",
+      introSubtext:
+        "Focus on hospitality while Vizit handles the logistics of your shared workspace.",
+
+      sections: [
+        {
+          heading: "The Modern Workspace Experience",
+          text: `The magic of a coworking space isn't just the high-speed internet or the free coffee; it’s the community. However, community growth often brings operational friction. When a community manager is buried under a mountain of manual check-ins, guest registrations, and "Who booked the boardroom?" disputes, the human connection is lost.`
+        },
+        {
+          heading: "The Vizit Transformation",
+          text: `With Vizit, the "front desk" becomes a bridge rather than a barrier. Imagine a member walking in, scanning a QR code, and having their host notified instantly via Slack. No paper logs, no awkward waiting. Our Coworking Management suite automates the "boring stuff"—billing, desk allocation, and meeting room schedules—allowing your team to get back to what they do best: fostering collaboration and growing your brand. `
+        }
+      ],
+
+      features: [
+        {
+          title: "Member-First Check-ins",
+          desc: "Give your members the autonomy they crave. Seamless QR-code entries and instant host notifications mean no one is left waiting at the front desk."
+        },
+        {
+          title: "Smart Desk & Room Scheduling",
+          desc: "An intuitive interface for booking meeting rooms or hot desks in real-time, preventing double-bookings and optimizing space utility."
+        },
+        {
+          title: "Integrated Billing & Analytics",
+          desc: "Automatically track space usage to simplify invoicing and gain insights into peak hours and popular amenities."
+        },
+        {
+          title: "Mobile App Access",
+          desc: "A white-labeled experience that puts your co-working community in the palm of your members' hands."
+        }
+
+      ]
+    }
   },
 ];
