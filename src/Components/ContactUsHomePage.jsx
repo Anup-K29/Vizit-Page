@@ -54,7 +54,7 @@ export const ContactUsHomePage = () => {
           <div className="relative w-full max-w-4xl rounded-2xl bg-white p-6 shadow-xl">
             <button
               onClick={() => setOpen(false)}
-              className="absolute right-4 top-3 text-2xl font-bold text-gray-500 hover:text-black cursor-pointer"
+              className="absolute right-3 top-0 text-2xl font-bold text-gray-500 hover:text-black cursor-pointer"
             >
               x
             </button>
