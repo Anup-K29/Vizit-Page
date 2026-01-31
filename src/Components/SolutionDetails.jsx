@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { solutionsData } from "../DataObjects/SolutionSection";
-import {ContactUsFeaturePage} from "@/Components/ContactUsFeaturePage.jsx"
+import { ContactUsFeaturePage } from "@/Components/ContactUsFeaturePage.jsx";
 
 export const SolutionDetails = () => {
   const { slug } = useParams();
@@ -13,8 +13,12 @@ export const SolutionDetails = () => {
     <section className="max-w-5xl mx-auto px-4 py-16 text-justify">
       <div className="flex flex-col lg:flex-row gap-10">
         <div className="flex-1">
-          <h1 className="text-4xl font-bold mb-4">{solution.details.introHeading}</h1>
-          <p className="text-gray-600 text-2xl">{solution.details.introSubtext}</p>
+          <h1 className="text-4xl font-bold mb-4">
+            {solution.details.introHeading}
+          </h1>
+          <p className="text-gray-600 text-2xl">
+            {solution.details.introSubtext}
+          </p>
         </div>
 
         <img
@@ -26,7 +30,6 @@ export const SolutionDetails = () => {
 
       {/* here later you can add the long content like in your screenshot */}
       <div className="mt-12 space-y-10">
-
         {/* Text sections */}
         {solution.details.sections.map((sec, i) => (
           <div key={i}>
@@ -47,8 +50,7 @@ export const SolutionDetails = () => {
             ))}
           </ul>
         </div>
-<ContactUsFeaturePage/>
-        
+        <ContactUsFeaturePage />
       </div>
     </section>
   );

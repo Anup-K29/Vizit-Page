@@ -19,7 +19,7 @@ export const ContactUsForm = () => {
   };
 
   return (
-    <div className="mt-16 rounded-2xl border border-[#AA60C8] p-8">
+    <div className="mt-2 rounded-2xl border border-[#AA60C8] p-8">
       <h2 className="text-2xl font-bold mb-2">Contact Us</h2>
       <p className="text-gray-600 mb-6">
         Tell us what you need and our team will get back to you.
