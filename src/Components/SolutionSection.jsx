@@ -1,5 +1,6 @@
 // components/SolutionsSection.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 import {solutionsData} from "../DataObjects/SolutionSection.js"
 
 const SolutionBlock = ({
@@ -8,6 +9,7 @@ const SolutionBlock = ({
   description,
   buttonText,
   image,
+  slug,
   reverse,
 }) => {
   return (
@@ -26,9 +28,12 @@ const SolutionBlock = ({
           {description}
         </p>
 
-        <button className="mt-6 rounded-lg bg-[white] px-6 py-3 text-md font-medium text-[#AA60C8] transition hover:text-[white] hover:bg-[#AA60C8] border border-[#AA60C8] cursor-pointer">
+        <Link 
+        to={`/solutions/${slug}`}
+        target="_blank"
+        className="mt-6 rounded-lg bg-[white] px-6 py-3 text-md font-medium text-[#AA60C8] transition hover:text-[white] hover:bg-[#AA60C8] border border-[#AA60C8] cursor-pointer">
           {buttonText}
-        </button>
+        </Link>
       </div>
 
       {/* IMAGE */}
