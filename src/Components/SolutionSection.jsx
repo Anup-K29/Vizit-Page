@@ -31,7 +31,7 @@ const SolutionBlock = ({
         <Link
           to={`/solutions/${slug}`}
           target="_blank"
-          className="mt-6 rounded-lg bg-[white] px-6 py-3 text-md font-medium text-[#AA60C8] transition hover:text-[white] hover:bg-[#AA60C8] border border-[#AA60C8] cursor-pointer"
+          className="inline-block mt-6 rounded-lg bg-[white] px-6 py-3 text-md font-medium text-[#AA60C8] transition hover:text-[white] hover:bg-[#AA60C8] border border-[#AA60C8] cursor-pointer"
         >
           {buttonText}
         </Link>
