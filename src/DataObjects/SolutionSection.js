@@ -64,39 +64,40 @@ export const solutionsData = [
       "Eliminate lobby congestion with automated queuing. QR check-ins and real-time updates ensure a seamless, professional entry experience for both guests and staff.",
     buttonText: "Read More",
     image: IntelligentQueueFlowManagement,
+    detailsImage:,
 
     details: {
-      introHeading: "Empower Your Space with Frictionless Operations",
+      introHeading: "Turn Waiting into a Premium Experience for Guests",
       introSubtext:
-        "Focus on hospitality while Vizit handles the logistics of your shared workspace.",
+        "Upgrade your lobby with automated queuing and real-time updates.",
 
       sections: [
         {
-          heading: "The Modern Workspace Experience",
-          text: `The magic of a coworking space isn't just the high-speed internet or the free coffee; it’s the community. However, community growth often brings operational friction. When a community manager is buried under a mountain of manual check-ins, guest registrations, and "Who booked the boardroom?" disputes, the human connection is lost.`
+          heading: "The Psychology of the Wait",
+          text: `We’ve all been there—standing in a crowded lobby, staring at a static number on a wall, wondering if we’ve been forgotten. For businesses, a physical queue isn't just a line; it’s a leak in customer satisfaction. "Intelligent Flow" is about more than just moving people; it’s about respecting their time`
         },
         {
           heading: "The Vizit Transformation",
-          text: `With Vizit, the "front desk" becomes a bridge rather than a barrier. Imagine a member walking in, scanning a QR code, and having their host notified instantly via Slack. No paper logs, no awkward waiting. Our Coworking Management suite automates the "boring stuff"—billing, desk allocation, and meeting room schedules—allowing your team to get back to what they do best: fostering collaboration and growing your brand. `
+          text: ` Vizit turns a static wait into a dynamic experience. By implementing virtual queuing, you allow your customers to "wait" on their own terms—whether that’s grabbing a coffee nearby or finishing an email. Real-time SMS updates keep them informed, while behind the scenes, our analytics dashboard gives your managers the "God-view" of your lobby. You’ll see peak times before they become problems, ensuring that your staff is always exactly where they need to be.`
         }
       ],
 
       features: [
         {
-          title: "Member-First Check-ins",
-          desc: "Give your members the autonomy they crave. Seamless QR-code entries and instant host notifications mean no one is left waiting at the front desk."
+          title: "Virtual Queuing",
+          desc: "Allow guests to join the queue digitally via a kiosk or mobile QR code. They can wait in a cafe or outside, receiving SMS updates when it’s their turn."
         },
         {
-          title: "Smart Desk & Room Scheduling",
-          desc: "An intuitive interface for booking meeting rooms or hot desks in real-time, preventing double-bookings and optimizing space utility."
+          title: "Dynamic Flow Routing",
+          desc: "Automatically direct visitors to the right department or counter based on the purpose of their visit, reducing lobby congestion."
         },
         {
-          title: "Integrated Billing & Analytics",
-          desc: "Automatically track space usage to simplify invoicing and gain insights into peak hours and popular amenities."
+          title: "Live Performance Dashboards",
+          desc: "Monitor average wait times and service durations in real-time, allowing managers to reallocate staff during peak surges."
         },
         {
-          title: "Mobile App Access",
-          desc: "A white-labeled experience that puts your co-working community in the palm of your members' hands."
+          title: "Feedback Loops",
+          desc: "Capture guest satisfaction immediately after their visit to ensure your service standards are consistently met."
         }
 
       ]
@@ -116,37 +117,37 @@ export const solutionsData = [
     image: SchoolCampusManagement,
 
     details: {
-      introHeading: "Empower Your Space with Frictionless Operations",
+      introHeading: "Safety and Accountability for Modern Schools & Colleges",
       introSubtext:
-        "Focus on hospitality while Vizit handles the logistics of your shared workspace.",
+        "Protecting your students and staff with automated, secure visitor oversight.",
 
       sections: [
         {
-          heading: "The Modern Workspace Experience",
-          text: `The magic of a coworking space isn't just the high-speed internet or the free coffee; it’s the community. However, community growth often brings operational friction. When a community manager is buried under a mountain of manual check-ins, guest registrations, and "Who booked the boardroom?" disputes, the human connection is lost.`
+          heading: "Safety as a Foundation for Learning",
+          text: `A school should be the safest place in a child’s life. Yet, traditional visitor logs are often incomplete, illegible, or easily bypassed. For administrators, the challenge is balancing a welcoming campus environment with the rigorous security protocols required in the modern world.`
         },
         {
           heading: "The Vizit Transformation",
-          text: `With Vizit, the "front desk" becomes a bridge rather than a barrier. Imagine a member walking in, scanning a QR code, and having their host notified instantly via Slack. No paper logs, no awkward waiting. Our Coworking Management suite automates the "boring stuff"—billing, desk allocation, and meeting room schedules—allowing your team to get back to what they do best: fostering collaboration and growing your brand. `
+          text: `From the moment a visitor steps onto campus, our system begins a silent, sophisticated verification process. Whether it’s cross-referencing watchlists or ensuring a student pick-up is authorized by the correct guardian. In the rare event of an emergency, the "instant roll-call" feature replaces the frantic paper-and-pen headcount with a precise, mobile-ready list of every soul on campus. We don't just manage visitors; we protect your community’s future. `
         }
       ],
 
       features: [
         {
-          title: "Member-First Check-ins",
-          desc: "Give your members the autonomy they crave. Seamless QR-code entries and instant host notifications mean no one is left waiting at the front desk."
+          title: "Verified Student Pick-up",
+          desc: "A secure, multi-factor verification system for guardians and authorized collectors to ensure students leave only with approved individuals."
         },
         {
-          title: "Smart Desk & Room Scheduling",
-          desc: "An intuitive interface for booking meeting rooms or hot desks in real-time, preventing double-bookings and optimizing space utility."
+          title: "Instant Watchlist Alerts",
+          desc: "Our system cross-references visitors against custom watchlists, immediately alerting security personnel to unauthorized entries."
         },
         {
-          title: "Integrated Billing & Analytics",
-          desc: "Automatically track space usage to simplify invoicing and gain insights into peak hours and popular amenities."
+          title: "Digital Emergency Roll Call",
+          desc: "In the event of an evacuation, generate an instant, mobile-accessible report of every student, staff member, and visitor on-site."
         },
         {
-          title: "Mobile App Access",
-          desc: "A white-labeled experience that puts your co-working community in the palm of your members' hands."
+          title: "Volunteer & Vendor Tracking",
+          desc: " Keep a clear log of third-party contractors and volunteers, including time-stamped entries and digital badge printing."
         }
 
       ]
@@ -163,37 +164,37 @@ export const solutionsData = [
     image: HospitalClinicManagement,
 
     details: {
-      introHeading: "Empower Your Space with Frictionless Operations",
+      introHeading: "Prioritizing Patient Care through Streamlined Access",
       introSubtext:
-        "Focus on hospitality while Vizit handles the logistics of your shared workspace.",
+        "Secure  & efficient visitor management for high-stakes environments.",
 
       sections: [
         {
-          heading: "The Modern Workspace Experience",
-          text: `The magic of a coworking space isn't just the high-speed internet or the free coffee; it’s the community. However, community growth often brings operational friction. When a community manager is buried under a mountain of manual check-ins, guest registrations, and "Who booked the boardroom?" disputes, the human connection is lost.`
+          heading: "Efficiency in High-Stakes Environments ",
+          text: `In a hospital, every second matters, and every interaction counts. Lobby congestion isn't just an inconvenience; it can be a health risk. Managing the flow of vendors, family members, and outpatients while maintaining HIPAA compliance and infection control is a monumental task for any medical facility.`
         },
         {
           heading: "The Vizit Transformation",
-          text: `With Vizit, the "front desk" becomes a bridge rather than a barrier. Imagine a member walking in, scanning a QR code, and having their host notified instantly via Slack. No paper logs, no awkward waiting. Our Coworking Management suite automates the "boring stuff"—billing, desk allocation, and meeting room schedules—allowing your team to get back to what they do best: fostering collaboration and growing your brand. `
+          text: `Vizit brings clinical precision to visitor management. Our healthcare-specific solution automates the "non-clinical" hurdles. Digital health screenings ensure that symptoms are caught before they reach the ward, while restricted access controls ensure that visitors only go where they are authorized. By removing the administrative burden from front-line staff, Vizit allows your healthcare heroes to keep their focus where it belongs: on patient outcomes and compassionate care. `
         }
       ],
 
       features: [
         {
-          title: "Member-First Check-ins",
-          desc: "Give your members the autonomy they crave. Seamless QR-code entries and instant host notifications mean no one is left waiting at the front desk."
+          title: "Digital Health Screening",
+          desc: "Automate health questionnaires and temperature checks at entry points to maintain a sterile and safe environment."
         },
         {
-          title: "Smart Desk & Room Scheduling",
-          desc: "An intuitive interface for booking meeting rooms or hot desks in real-time, preventing double-bookings and optimizing space utility."
+          title: "Sensitive Zone Access Control",
+          desc: "Limit visitor access to specific wards or floors based on patient needs and hospital hours."
         },
         {
-          title: "Integrated Billing & Analytics",
-          desc: "Automatically track space usage to simplify invoicing and gain insights into peak hours and popular amenities."
+          title: "Real-time Occupancy Monitoring",
+          desc: "Prevent overcrowding in waiting areas with automated alerts when capacity limits are approached."
         },
         {
-          title: "Mobile App Access",
-          desc: "A white-labeled experience that puts your co-working community in the palm of your members' hands."
+          title: "HIPAA-Compliant Data",
+          desc: "Rest easy knowing all visitor data is encrypted and stored in compliance with healthcare privacy regulations."
         }
 
       ]
@@ -210,37 +211,37 @@ export const solutionsData = [
     image: HotelManagement,
 
     details: {
-      introHeading: "Empower Your Space with Frictionless Operations",
+      introHeading: "Elevating Guest Experiences through Seamless Arrivals",
       introSubtext:
-        "Focus on hospitality while Vizit handles the logistics of your shared workspace.",
+        "Professional visitor management for premium hospitality environments.",
 
       sections: [
         {
-          heading: "The Modern Workspace Experience",
-          text: `The magic of a coworking space isn't just the high-speed internet or the free coffee; it’s the community. However, community growth often brings operational friction. When a community manager is buried under a mountain of manual check-ins, guest registrations, and "Who booked the boardroom?" disputes, the human connection is lost.`
+          heading: "Digital Precision for Five-Star Hospitality",
+          text: `In the hospitality industry, the first impression begins the moment a guest walks through your doors. A crowded lobby or a slow check-in process isn't just an operational bottleneck; it’s a missed opportunity to provide luxury service. Balancing the flow of guests and event attendees is a complex challenge for any modern hotel or resort.`
         },
         {
           heading: "The Vizit Transformation",
-          text: `With Vizit, the "front desk" becomes a bridge rather than a barrier. Imagine a member walking in, scanning a QR code, and having their host notified instantly via Slack. No paper logs, no awkward waiting. Our Coworking Management suite automates the "boring stuff"—billing, desk allocation, and meeting room schedules—allowing your team to get back to what they do best: fostering collaboration and growing your brand. `
+          text: `Vizit brings effortless elegance to guest management. Our hospitality-specific solution automates the "administrative" friction of the lobby. Digital pre-registration ensures that guests move quickly from the entrance to their rooms, while real-time staff notifications ensure your team is always ready to greet VIPs by name. By removing the manual burden from front-desk staff, Vizit allows your hospitality professionals to focus on creating memorable, five-star experiences for every guest. `
         }
       ],
 
       features: [
         {
-          title: "Member-First Check-ins",
-          desc: "Give your members the autonomy they crave. Seamless QR-code entries and instant host notifications mean no one is left waiting at the front desk."
+          title: "Digital Pre-Registration",
+          desc: "Enable guests to complete check-in forms and sign digital waivers via mobile before arrival to ensure a swift, touchless entry experience."
         },
         {
-          title: "Smart Desk & Room Scheduling",
-          desc: "An intuitive interface for booking meeting rooms or hot desks in real-time, preventing double-bookings and optimizing space utility."
+          title: "VIP & Staff Notifications",
+          desc: "Instantly alert concierge or management teams when an expected VIP or event organizer checks in, ensuring personalized service every time."
         },
         {
-          title: "Integrated Billing & Analytics",
-          desc: "Automatically track space usage to simplify invoicing and gain insights into peak hours and popular amenities."
+          title: "Amenity Access Control",
+          desc: "Manage and monitor guest access to restricted areas like executive lounges, spas, or gyms using secure, time-sensitive digital passes."
         },
         {
-          title: "Mobile App Access",
-          desc: "A white-labeled experience that puts your co-working community in the palm of your members' hands."
+          title: "Vendor & Contractor Logs",
+          desc: "Maintain a secure, time-stamped digital record of all third-party service providers and vendors entering the back-of-house or guest areas."
         }
 
       ]
