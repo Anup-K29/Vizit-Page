@@ -6,6 +6,15 @@ import HospitalClinicManagement from "../assets/images/SolutionPage/HospitalClin
 import HotelManagement from "../assets/images/SolutionPage/HotelManagement.webp";
 
 
+
+import CoWorkngSpaceDetails from "../assets/images/SolutionPage/CoWorkngSpaceDetails.webp";
+import QueueManagementDetails from "../assets/images/SolutionPage/QueueManagementDetails.webp";
+import SchoolManagementDetails from "../assets/images/SolutionPage/SchoolManagementDetails.webp";
+import HopitalManagementDetails from "../assets/images/SolutionPage/HopitalManagementDetails.webp";
+
+
+
+
 export const solutionsData = [
   {
     id: 1,
@@ -15,7 +24,8 @@ export const solutionsData = [
     description:
       "Manage your shared workspace with ease, from seamless QR code check-ins and member desk bookings to automated host notifications, meeting room scheduling, and mobile app access.",
     buttonText: "Read More",
-    image: CoworkingSpaceManagement,
+    image: CoworkingSpaceManagement, detailsImage: CoWorkngSpaceDetails,
+
     details: {
       introHeading: "Empower Your Space with Frictionless Operations",
       introSubtext:
@@ -64,7 +74,7 @@ export const solutionsData = [
       "Eliminate lobby congestion with automated queuing. QR check-ins and real-time updates ensure a seamless, professional entry experience for both guests and staff.",
     buttonText: "Read More",
     image: IntelligentQueueFlowManagement,
-    detailsImage:,
+    detailsImage: QueueManagementDetails,
 
     details: {
       introHeading: "Turn Waiting into a Premium Experience for Guests",
@@ -114,7 +124,8 @@ export const solutionsData = [
       "Manage your educational institution with ease, from secure student pick-up verification and automated visitor watchlists to instant emergency roll call reporting, volunteer tracking, and mobile app access.",
     buttonText: "Read More",
 
-    image: SchoolCampusManagement,
+    image: SchoolCampusManagement, detailsImage: SchoolManagementDetails,
+
 
     details: {
       introHeading: "Safety and Accountability for Modern Schools & Colleges",
@@ -161,7 +172,8 @@ export const solutionsData = [
       "Manage every aspect of your medical facility with ease, from patient visitor tracking and digital health screenings to secure ward access control, real-time occupancy monitoring, and mobile app access.",
     buttonText: "Read More",
 
-    image: HospitalClinicManagement,
+    image: HospitalClinicManagement, detailsImage: HopitalManagementDetails,
+
 
     details: {
       introHeading: "Prioritizing Patient Care through Streamlined Access",

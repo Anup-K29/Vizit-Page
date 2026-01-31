@@ -1,7 +1,7 @@
 // components/SolutionsSection.jsx
 import React from "react";
 import { Link } from "react-router-dom";
-import {solutionsData} from "../DataObjects/SolutionSection.js"
+import { solutionsData } from "../DataObjects/SolutionSection.js";
 
 const SolutionBlock = ({
   eyebrow,
@@ -28,10 +28,11 @@ const SolutionBlock = ({
           {description}
         </p>
 
-        <Link 
-        to={`/solutions/${slug}`}
-        target="_blank"
-        className="mt-6 rounded-lg bg-[white] px-6 py-3 text-md font-medium text-[#AA60C8] transition hover:text-[white] hover:bg-[#AA60C8] border border-[#AA60C8] cursor-pointer">
+        <Link
+          to={`/solutions/${slug}`}
+          target="_blank"
+          className="mt-6 rounded-lg bg-[white] px-6 py-3 text-md font-medium text-[#AA60C8] transition hover:text-[white] hover:bg-[#AA60C8] border border-[#AA60C8] cursor-pointer"
+        >
           {buttonText}
         </Link>
       </div>
@@ -43,7 +44,7 @@ const SolutionBlock = ({
           alt={title}
           loading="lazy"
           decoding="async"
-          className="w-full rounded-xl object-contain " 
+          className="w-full rounded-xl object-contain "
         />
       </div>
     </div>

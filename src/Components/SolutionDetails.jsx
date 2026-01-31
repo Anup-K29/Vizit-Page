@@ -17,7 +17,7 @@ export const SolutionDetails = () => {
         </div>
 
         <img
-          src={solution.image}
+          src={solution.detailsImage}
           alt={solution.title}
           className="w-full max-w-md rounded-xl object-contain"
         />
@@ -49,7 +49,7 @@ export const SolutionDetails = () => {
               <li key={i}>
                 <span className="font-semibold">{item.title}:</span>
                 {item.desc}
-                </li>
+              </li>
             ))}
           </ul>
         </div>
