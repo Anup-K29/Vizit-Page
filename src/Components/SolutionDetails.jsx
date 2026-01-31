@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { solutionsData } from "../DataObjects/SolutionSection";
+import {ContactUsFeaturePage} from "@/Components/ContactUsFeaturePage.jsx"
 
 export const SolutionDetails = () => {
   const { slug } = useParams();
@@ -46,6 +47,8 @@ export const SolutionDetails = () => {
             ))}
           </ul>
         </div>
+<ContactUsFeaturePage/>
+        
       </div>
     </section>
   );
