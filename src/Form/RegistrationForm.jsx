@@ -7,7 +7,8 @@ import { useCountryCode } from "./countryCode";
 import axios from "axios";
 import toast from "react-hot-toast";
 
-const API_BASE_URL = "https://vms-backend-w6pj.onrender.com";
+// const API_BASE_URL = "https://vms-backend-w6pj.onrender.com";
+const API_BASE_URL = "https://vizit-2-0.onrender.com";
 
 function RegistrationForm() {
   const countryList = useCountryCode();
